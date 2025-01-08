@@ -16,71 +16,46 @@
       height: 40px;
       border-radius: 50%;
     }
-    </style>
+    .small-button {
+      right: 2000px;
+        padding: 5px 10px; /* Reduce padding */
+        font-size: 12px;   /* Smaller text */
+        width: auto;       /* Adjust width if necessary */
+        height: auto;      /* Adjust height if necessary */
+    }
+  </style>
 </head>
-<body> 
-
+<body>
  <?php include 'topbar.php'?>
  
-  <!-- Sidebar -->
-  <div id="sidebar"  class="sidebar d-flex flex-column">
+ <div id="sidebar"  class="sidebar d-flex flex-column">
 
-    <h2 class="text-center py-2">Sidebar</h2>
-    <a href="index.php" onclick="toggleItems()">
-    <i class="fas fa-plus-circle"></i> <!-- Add Icon -->
-      Dashboard
-   </a>
-    <!-- Hidden items -->
-  <div id="items" class="hidden-items">
-        <ul>
-            <a href=""><li>Property</li></a>
-            <a href=""><li>Tenants</li></a>
-            <a href=""><li>Rent Collection</li></a>
-           <a><li>Item 1</li></a>
-</ul>
-  </div>
-    <a href="#profile">Profile</a>
-    <a href="#settings">
-    <i class="fas fa-cogs"></i> <!-- Settings Icon -->
-      Settings
-    </a>
-    <a href="#help">Help</a>
-  </div>
+<h2 class="text-center py-3">Sidebar</h2>
 
-  
-<button class="btn btn-primary top-right">ADD LEASE</button>
-
-<button class="btn btn-primary jt-right">RECEIVE PAYMENT</button> 
+<a href="#dashboard">Dashboard</a>
+<a href="#profile">Profile</a>
+<a href="#settings">Settings</a>
+<a href="#help">Help</a>
+<a href="#logout">Logout</a>
+</div>
 
 
- <header class="header d-flex justify-content-between align-items-center">
-   <h1 class="h5 mb-0">BT-POS</h1>
-   <div class="d-flex align-items-center">
-     <!-- Notification Icon -->
-     <button class="btn btn-link text-dark p-0 me-3" data-bs-toggle="tooltip" title="Notifications">
-       <i class="bi bi-bell fs-4"></i>
-     </button>
-     <!-- Profile Icon -->
-     <img src="https://via.placeholder.com/40" alt="Profile" class="profile-img" data-bs-toggle="tooltip" title="Profile">
-   </div>
- </header>
+
 
  <div class="container py-5">
-   <h1 class="mb-4">Filter Items</h1>
+    <h1 class="mb-4">Filter Items</h1>
 
     <!-- Filter Section -->
     <div class="row mb-4">
       <div class="col-md-6">
         <input type="text" id="search" class="form-control" placeholder="Search items">
       </div>
-    </div>
 
-    
-    <b>
-        <p>CATEGORIES</p></b>
+      <b>
+        <p>CATEGORIES</p>
         <select id="category" class="form-select">
-        <hr>
-      <!-- Dropdown for Filtering -->
+            <hr>
+           <!-- Dropdown for Filtering -->
     <div class="mb-4">
         <option value="all">Tenant</option>
         <option value="electronics">Start-End</option>
@@ -89,7 +64,7 @@
         <option value="books">Rent</option>
         </select>
       </div>
-
+      </div>
     </div>
 
     <!-- Items Section -->
@@ -120,25 +95,23 @@
         </div>
       </div>
      
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <p>RENT COLLECTION</p>
- 
   
+  <button class="btn btn-primary top-right small-button">ADD OCCUPANT</button>
+      <div><br>
+  <b><p>OCCUPANCY STATUS</p></b>
+      </div>
 
   <table class="table">
     <thead>
-      <tr>  
-        <th scope="col">Numbers</th>
+      <tr>
+        <th scope="col">Tenant Number</th>
         <th scope="col">Tenant</th>
-        <th scope="col">Start-End</th>
-        <th scope="col">Days Remaining</th>
-        <th scope="col">Unit</th>
-        <th scope="col">Rent</th>
+        <th scope="col">Unit Numbers</th>
+        <th scope="col">Occupied</th>
+        <th scope="col">Vacant</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Status</th>
+        <th scope="col">Status</th>
       </tr>
     </thead>
     <tbody>
@@ -147,30 +120,28 @@
         <td>Mark</td>
         <td>Otto</td>
         <td>@mdo</td>
+        <td>Otto</td>
         <td>@mdo</td>
+        <td>Otto</td>
         <td>@mdo</td>
-
       </tr>
       <tr>
         <th scope="row">2</th>
         <td>Jacob</td>
         <td>Thornton</td>
         <td>@fat</td>
+        <td>Otto</td>
         <td>@mdo</td>
+        <td>Otto</td>
         <td>@mdo</td>
       </tr>
       <tr>
         <th scope="row">3</th>
         <td colspan="2">Larry the Bird</td>
         <td>@twitter</td>
+        <td>Otto</td>
         <td>@mdo</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-        <td>@mdo</td>
+        <td>Otto</td>
         <td>@mdo</td>
       </tr>
       <tr>
@@ -178,7 +149,9 @@
         <td>Mark</td>
         <td>Otto</td>
         <td>@mdo</td>
+        <td>Otto</td>
         <td>@mdo</td>
+        <td>Otto</td>
         <td>@mdo</td>
       </tr>
       <tr>
@@ -186,29 +159,26 @@
         <td>Jacob</td>
         <td>Thornton</td>
         <td>@fat</td>
+        <td>Otto</td>
         <td>@mdo</td>
+        <td>Otto</td>
         <td>@mdo</td>
       </tr>
       <tr>
         <th scope="row">3</th>
         <td colspan="2">Larry the Bird</td>
         <td>@twitter</td>
+        <td>Otto</td>
         <td>@mdo</td>
-        <td>@mdo</td>
-      </tr>
-      
-      <tr>
-        <th scope="row">4</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-        <td>@mdo</td>
+        <td>Otto</td>
         <td>@mdo</td>
       </tr>
-
-
-
     </tbody>
-  </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
   
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -248,5 +218,3 @@
   </script>
 </body>
 </html>
-
-
