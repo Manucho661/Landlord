@@ -9,7 +9,8 @@
 
 <style>
     .container{
-        height: 100vh;
+        height: 90%;
+        
     }
     .container .row{
         height: 40%;
@@ -140,13 +141,13 @@ margin-top: 40px;
 
         <hr>
 
-        <div class="row"> <!-- third row -->
+        <div class="row" style="height: 50%;"> <!-- third row -->
                 <div class="col-4">
 
                     <div class="details">
 
                         <div>
-                            <img src="./images/second.png" alt="" width="250px" height="250px"> 
+                            <img src="./images/second.png" alt="" width="100%" height="100%"> 
                         </div>
                     </div>
                 </div>
