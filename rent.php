@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Header with Icons</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link href="index.css"  rel="stylesheet"> 
+  <link href="index.css"  rel="stylesheet">
   <style>
     .header {
       background-color: #f8f9fa; /* Light gray background */
@@ -16,19 +16,12 @@
       height: 40px;
       border-radius: 50%;
     }
-    .small-button {
-      right: 2000px;
-        padding: 5px 10px; /* Reduce padding */
-        font-size: 12px;   /* Smaller text */
-        width: auto;       /* Adjust width if necessary */
-        height: auto;      /* Adjust height if necessary */
-    }
   </style>
 </head>
 <body>
- <?php include 'topbar.php'?>
- 
- <div id="sidebar"  class="sidebar d-flex flex-column">
+<?php include 'topbar.php'?>
+
+<div id="sidebar"  class="sidebar d-flex flex-column">
 
 <h2 class="text-center py-3">Sidebar</h2>
 
@@ -41,6 +34,9 @@
 
 
 
+<button class="btn btn-primary top-right">ADD LEASE</button>
+
+ <button class="btn btn-primary jt-right">RECEIVE PAYMENT</button> 
 
  <div class="container py-5">
     <h1 class="mb-4">Filter Items</h1>
@@ -50,20 +46,13 @@
       <div class="col-md-6">
         <input type="text" id="search" class="form-control" placeholder="Search items">
       </div>
-
-      <b>
-        <p>CATEGORIES</p>
+      <div class="col-md-4">
         <select id="category" class="form-select">
-            <hr>
-           <!-- Dropdown for Filtering -->
-    <div class="mb-4">
-        <option value="all">Tenant</option>
-        <option value="electronics">Start-End</option>
-        <option value="clothing">Days Remaining</option>
-        <option value="books">Unit</option>
-        <option value="books">Rent</option>
+          <option value="all">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+          <option value="books">Books</option>
         </select>
-      </div>
       </div>
     </div>
 
@@ -73,45 +62,47 @@
       <div class="col-md-4 item electronics">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">OCCUPANCY</h5>
-            <p class="card-text">25</p>
+            <h5 class="card-title">Smartphone</h5>
+            <p class="card-text">Category: Electronics</p>
           </div>
         </div>
       </div>
       <div class="col-md-4 item clothing">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">TENANTS</h5>
-            <p class="card-text">50</p>
+            <h5 class="card-title">T-Shirt</h5>
+            <p class="card-text">Category: Clothing</p>
           </div>
         </div>
       </div>
       <div class="col-md-4 item books">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">VACANCY</h5>
-            <p class="card-text">40</p>
+            <h5 class="card-title">Novel</h5>
+            <p class="card-text">Category: Books</p>
           </div>
         </div>
       </div>
      
-  
-  <button class="btn btn-primary top-right small-button">ADD OCCUPANT</button>
-      <div><br>
-  <b><p>OCCUPANCY STATUS</p></b>
+        </div>
       </div>
+    </div>
+  </div>
+
+
+  <p>RENT COLLECTION</p>
+ 
+  
 
   <table class="table">
     <thead>
-      <tr>
-        <th scope="col">Tenant Number</th>
+      <tr>  
+        <th scope="col">Numbers</th>
         <th scope="col">Tenant</th>
-        <th scope="col">Unit Numbers</th>
-        <th scope="col">Occupied</th>
-        <th scope="col">Vacant</th>
-        <th scope="col">Phone Number</th>
-        <th scope="col">Status</th>
-        <th scope="col">Status</th>
+        <th scope="col">Start-End</th>
+        <th scope="col">Days Remaining</th>
+        <th scope="col">Unit</th>
+        <th scope="col">Rent</th>
       </tr>
     </thead>
     <tbody>
@@ -120,28 +111,30 @@
         <td>Mark</td>
         <td>Otto</td>
         <td>@mdo</td>
-        <td>Otto</td>
         <td>@mdo</td>
-        <td>Otto</td>
         <td>@mdo</td>
+
       </tr>
       <tr>
         <th scope="row">2</th>
         <td>Jacob</td>
         <td>Thornton</td>
         <td>@fat</td>
-        <td>Otto</td>
         <td>@mdo</td>
-        <td>Otto</td>
         <td>@mdo</td>
       </tr>
       <tr>
         <th scope="row">3</th>
         <td colspan="2">Larry the Bird</td>
         <td>@twitter</td>
-        <td>Otto</td>
         <td>@mdo</td>
-        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+        <td>@mdo</td>
         <td>@mdo</td>
       </tr>
       <tr>
@@ -149,9 +142,7 @@
         <td>Mark</td>
         <td>Otto</td>
         <td>@mdo</td>
-        <td>Otto</td>
         <td>@mdo</td>
-        <td>Otto</td>
         <td>@mdo</td>
       </tr>
       <tr>
@@ -159,26 +150,29 @@
         <td>Jacob</td>
         <td>Thornton</td>
         <td>@fat</td>
-        <td>Otto</td>
         <td>@mdo</td>
-        <td>Otto</td>
         <td>@mdo</td>
       </tr>
       <tr>
         <th scope="row">3</th>
         <td colspan="2">Larry the Bird</td>
         <td>@twitter</td>
-        <td>Otto</td>
         <td>@mdo</td>
-        <td>Otto</td>
         <td>@mdo</td>
       </tr>
-    </tbody>
-        </div>
-      </div>
-    </div>
-  </div>
+      
+      <tr>
+        <th scope="row">4</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+        <td>@mdo</td>
+        <td>@mdo</td>
+      </tr>
 
+
+
+    </tbody>
+  </table>
   
   <script>
     document.addEventListener("DOMContentLoaded", () => {
