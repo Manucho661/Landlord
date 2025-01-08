@@ -8,9 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
+    .content{
+        /* height: 90%; */
+         margin-top: 10%; 
+         position: absolute;
+         height: 90%;
+    }
     .container{
-        height: 90%;
-        
+    
+    }
+    
+    .sidebar{
+        height: 100%;
     }
     .container .row{
         height: 40%;
@@ -101,20 +110,21 @@ margin-top: 40px;
 <body>
     <?php include 'topbar.php'?>
 
-    <div id="sidebar"  class="sidebar d-flex flex-column">
+    <div id="sidebar"  class="sidebar">
 
-<h2 class="text-center py-3">Sidebar</h2>
+        <h2 class="text-center py-3">Sidebar</h2>
 
-<a href="#dashboard">Dashboard</a>
-<a href="#profile">Profile</a>
-<a href="#settings">Settings</a>
-<a href="#help">Help</a>
-<a href="#logout">Logout</a>
-</div>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#profile">Profile</a>
+        <a href="#settings">Settings</a>
+        <a href="#help">Help</a>
+        <a href="#logout">Logout</a>
+    </div>
 
 
 
 <div class="content" id="mainContent">
+
     <div class="container">
 
         <div class="row" > <!-- first row -->
@@ -142,7 +152,7 @@ margin-top: 40px;
         <hr>
 
         <div class="row" style="height: 50%;"> <!-- third row -->
-                <div class="col-4">
+                <div class="col-8">
 
                     <div class="details">
 
@@ -183,17 +193,7 @@ margin-top: 40px;
                 </div>            
             
 
-            <!-- <div class="container my-5">
-                <label for="fileInput" class="custom-file-label">
-                <i class="bi bi-upload"></i> Change photo
-                </label>
-                <input type="file" id="fileInput" name="photo" accept="image/*">
-                </div>
-                </div>
-
-                </div>
             
-            </div> -->
         
         </div>
 
