@@ -36,7 +36,7 @@
 
 <button class="btn btn-primary top-right">ADD LEASE</button>
 
- <a href="payment.html"><button class="btn btn-primary jt-right">RECEIVE PAYMENT</button> </a>
+ <a href="payment.php"><button class="btn btn-primary jt-right">RECEIVE PAYMENT</button> </a>
 
  <div class="container py-5">
     <h1 class="mb-4">Filter Items</h1>
@@ -103,6 +103,7 @@
         <th scope="col">Days Remaining</th>
         <th scope="col">Unit</th>
         <th scope="col">Rent</th>
+        <th scope="col">Status</th>
       </tr>
     </thead>
     <tbody>
@@ -110,6 +111,7 @@
         <th scope="row">1</th>
         <td>Mark</td>
         <td>Otto</td>
+        <td>@mdo</td>
         <td>@mdo</td>
         <td>@mdo</td>
         <td>@mdo</td>
@@ -122,11 +124,13 @@
         <td>@fat</td>
         <td>@mdo</td>
         <td>@mdo</td>
+        <td>@mdo</td>
       </tr>
       <tr>
         <th scope="row">3</th>
         <td colspan="2">Larry the Bird</td>
         <td>@twitter</td>
+        <td>@mdo</td>
         <td>@mdo</td>
         <td>@mdo</td>
       </tr>
@@ -136,11 +140,13 @@
         <td>@twitter</td>
         <td>@mdo</td>
         <td>@mdo</td>
+        <td>@mdo</td>
       </tr>
       <tr>
         <th scope="row">1</th>
         <td>Mark</td>
         <td>Otto</td>
+        <td>@mdo</td>
         <td>@mdo</td>
         <td>@mdo</td>
         <td>@mdo</td>
@@ -152,11 +158,13 @@
         <td>@fat</td>
         <td>@mdo</td>
         <td>@mdo</td>
+        <td>@mdo</td>
       </tr>
       <tr>
         <th scope="row">3</th>
         <td colspan="2">Larry the Bird</td>
         <td>@twitter</td>
+        <td>@mdo</td>
         <td>@mdo</td>
         <td>@mdo</td>
       </tr>
@@ -165,6 +173,7 @@
         <th scope="row">4</th>
         <td colspan="2">Larry the Bird</td>
         <td>@twitter</td>
+        <td>@mdo</td>
         <td>@mdo</td>
         <td>@mdo</td>
       </tr>

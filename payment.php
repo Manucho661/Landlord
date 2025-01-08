@@ -6,6 +6,7 @@
   <title>Date Input Styled with Bootstrap</title>
   <!-- Link Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
   <style>
     /* Custom styles for the date input */
     .form-select, .form-control {
@@ -28,6 +29,18 @@
   </style>
 </head>
 <body>
+<?php include 'topbar.php'?>
+<div id="sidebar"  class="sidebar d-flex flex-column">
+
+<h2 class="text-center py-3">Sidebar</h2>
+
+<a href="#dashboard">Dashboard</a>
+<a href="#profile">Profile</a>
+<a href="#settings">Settings</a>
+<a href="#help">Help</a>
+<a href="#logout">Logout</a>
+</div>
+
   <div class="container">
     <div class="row">
       <div class="col-md-6 offset-md-3">
