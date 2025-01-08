@@ -166,15 +166,15 @@ border-bottom: none; /* Remove border from the last item */
 }
 
 .top-right {
-margin-top: 50px;
-top:1500px;
+top:300px;
 right:300px;
+position: absolute;
 }
 
 .jt-right {
 position: absolute;
-top: 70px;
-right:40px;
+top: 300px;
+right:60px;
 }
 
 .top-left-button {
@@ -192,4 +192,7 @@ color: #00192D;
 
 .mainContent{
   height: 100%;
+}
+.item electronics{
+  margin-left: 80%;
 }
