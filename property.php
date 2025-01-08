@@ -15,6 +15,11 @@
     .container .row{
         height: 40%;
     }
+    .content{
+        margin-top: 10%;
+        position: absolute;
+        height: 90%;
+    }
     .content .propName{
         /* text-align: end; */
         /* width: 24%; */

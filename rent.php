@@ -36,7 +36,7 @@
 
 <button class="btn btn-primary top-right">ADD LEASE</button>
 
- <button class="btn btn-primary jt-right">RECEIVE PAYMENT</button> 
+ <a href="payment.html"><button class="btn btn-primary jt-right">RECEIVE PAYMENT</button> </a>
 
  <div class="container py-5">
     <h1 class="mb-4">Filter Items</h1>
