@@ -14,9 +14,13 @@
          position: absolute;
          height: 90%;
     }
-    .container{
-    
-    }
+    body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        .full-width-container {
+            padding: 15px; /* Add a small padding for better appearance */
+        }
     
     .sidebar{
         height: 100%;

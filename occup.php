@@ -43,7 +43,7 @@
 
 
  <div class="container py-5">
-    <h1 class="mb-4">Filter Items</h1>
+    <!-- <h1 class="mb-4">Filter Items</h1> -->
 
     <!-- Filter Section -->
     <div class="row mb-4">
