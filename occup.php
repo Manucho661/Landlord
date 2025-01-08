@@ -26,9 +26,19 @@
   </style>
 </head>
 <body>
- <?php include 'sidebar.php'?> 
-
  <?php include 'topbar.php'?>
+ 
+ <div id="sidebar"  class="sidebar d-flex flex-column">
+
+<h2 class="text-center py-3">Sidebar</h2>
+
+<a href="#dashboard">Dashboard</a>
+<a href="#profile">Profile</a>
+<a href="#settings">Settings</a>
+<a href="#help">Help</a>
+<a href="#logout">Logout</a>
+</div>
+
 
 
 

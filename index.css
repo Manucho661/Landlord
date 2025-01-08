@@ -20,8 +20,7 @@ body {
   padding: 20px;
   text-align: center;
   position: fixed;
-  height: 1000px;
-   width: 2000px;
+   width: 100%;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -175,12 +174,7 @@ position: absolute;
 top: 70px;
 right:40px;
 }
-.header {
-    position: relative; /* Make the header a positioning context */
-    height: 120px;      /* Set a fixed height for the header */
-    background-color: #f8f9fa; /* Light gray background */
-    border-bottom: 1px solid #ddd; /* Optional border */
-}
+
 .top-left-button {
 background-color:#00192D ;
 color:#FFC107;
