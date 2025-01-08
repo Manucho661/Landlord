@@ -152,7 +152,7 @@ margin-top: 40px;
         <hr>
 
         <div class="row" style="height: 50%;"> <!-- third row -->
-                <div class="col-8">
+                <div class="col-lg-8">
 
                     <div class="details">
 
