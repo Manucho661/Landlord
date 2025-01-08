@@ -8,12 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
+     .footer {
+            background-color: #343a40; /* Dark gray background */
+            color: white; /* White text */
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #f8f9fa; /* Light gray links */
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #adb5bd; /* Slightly darker gray on hover */
+        }
     .content{
         /* height: 90%; */
          margin-top: 10%; 
          position: absolute;
          height: 90%;
+         width: 80vw;
     }
+
     body {
             margin: 0; /* Remove default margin */
             padding: 0; /* Remove default padding */
@@ -38,7 +52,7 @@
         /* width: 24%; */
     }
 .content .propName p{
-/* font-size: 25px; */
+/* font-size: 25px; 
 /* position: absolute; */
 font-family: 'Playfair Display', serif; /* Elegant for creative projects */
     font-size: 25px;
@@ -161,9 +175,9 @@ margin-top: 40px;
         <hr>
 
         <div class="row" style="height: 50%;"> <!-- third row -->
-                <div class="col-lg-8">
+                <div class="col-lg-6">
 
-                    <div class="details">
+                    <div class="details" style="width:100%;">
 
                         <div>
                             <img src="./images/second.png" alt="" width="100%" height="100%"> 
@@ -206,10 +220,38 @@ margin-top: 40px;
         
         </div>
 
+        <div class="row mt-5">
+            <!-- About Section -->
+            <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>We are committed to providing the best service and experience for our users. Contact us for more information.</p>
+                </div>
+                <!-- Links Section -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p>
+                        Email: <a href="mailto:info@example.com">info@example.com</a><br>
+                        Phone: +123 456 7890<br>
+                        Address: 123 Main St, City, Country
+                    </p>
+                </div>
+        </div>
+
     </div>
 
 </div>
 
+    <!-- Bootstrap
 
 
 
