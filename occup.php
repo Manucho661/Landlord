@@ -40,17 +40,18 @@
 </div>
 
 
+<div class="content">
 
 
  <div class="container py-5">
-    <!-- <h1 class="mb-4">Filter Items</h1> -->
+    
 
     <!-- Filter Section -->
     <div class="row mb-4">
       <div class="col-md-6">
         <input type="text" id="search" class="form-control" placeholder="Search items">
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <select id="category" class="form-select">
           <option value="all">All Categories</option>
           <option value="electronics">Electronics</option>
@@ -58,12 +59,11 @@
           <option value="books">Books</option>
         </select>
       </div>
-    </div>
 
     <!-- Items Section -->
     <div class="row" id="items-container">
       <!-- Item Template -->
-      <div class="col-md-4 item electronics">
+      <div class="col-md-3 item electronics">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">OCCUPANCY</h5>
@@ -172,7 +172,7 @@
     </div>
   </div>
 
-  
+  </div>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const searchInput = document.getElementById("search");
