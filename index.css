@@ -1,0 +1,164 @@
+body {
+    margin: 0%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    
+    
+  }
+
+/* search bar */
+  .search-bar {
+    align-items: center;
+    max-width: 500px;
+    margin: 0px;
+  }
+
+  /* header style */
+  .header {
+    background-color:#FFFFFF; /* White*/
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .header h1 {
+    margin: 0;
+  }
+  .nav {
+    margin-top: 10px;
+  }
+  .nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+  }
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  .content {
+    margin-top: 50px;
+    padding: 80px 20px; /* Add padding to accommodate fixed header */
+  }
+
+/* sidebar style */
+  .sidebar {
+    height: 100vh;
+    position: fixed;
+    width: 250px;
+    background-color:#00192D; /* Darker Blue */
+    color: white;
+  }
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+  .sidebar a:hover {
+    background-color:#FFC107; /* RGB */
+  }
+  .content {
+    margin-left: 250px; /* Space for sidebar */
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+  }
+
+  .toggle-btn {
+    position: absolute;
+    top: 10%;
+      /* Position it outside the sidebar */
+    /* left: 70%; */
+     background-color: transparent; 
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .toggle-btn .bar {
+    display: block;
+    width: 20px;
+     height: 2px; 
+     background-color: grey; 
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  .sidebar.collapsed {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .content .sidebar-expanded {
+    margin-left: 10px; /* When sidebar is expanded */
+  }
+  .content.sidebar-collapsed {
+    margin-left: 0; /* When sidebar is collapsed */
+    margin-right: 0;
+  }
+ .content h2{
+    margin-top: 50px;
+ }
+.col{
+    margin: 50px;
+
+}
+.hidden-items {
+  display: none;
+}
+
+/* Styling for the button */
+#showButton {
+  margin: 20px;
+}
+
+/* Style for the container of the items */
+#items {
+  display: none;
+  background-color: lightblue; /* Background color */
+  border: 2px solid darkblue; /* Border around the list */
+  padding: 10px;
+  width: 200px; /* Width of the list */
+  position: fixed; /* Position fixed on the screen */
+  left: 150px; /* Position the list on the right side */
+  top: 50px; /* Adjust from top for visibility */
+}
+
+/* Style for list items */
+#items ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#items li {
+  padding: 5px;
+  border-bottom: 1px solid darkblue; /* Border between items */
+}
+
+#items li:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+  /* Container for right-side icons in header */
+  .header-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Common styles for all icons */
+.icon-button {
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.icon-button:hover {
+    color: blue;
+}
