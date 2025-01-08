@@ -18,7 +18,7 @@
   <div id="sidebar"  class="sidebar d-flex flex-column">
 
     <h2 class="text-center py-3">Sidebar</h2>
-    <a href="#dashboard" onclick="toggleItems()">
+    <a href="index.php" onclick="toggleItems()">
     <i class="fas fa-plus-circle"></i> <!-- Add Icon -->
       Dashboard
    </a>

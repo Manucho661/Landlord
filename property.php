@@ -122,9 +122,9 @@ margin-top: 40px;
             <div class="propNav">
                 <ul>
                     <li> <a class="fw-semibold" href="">Summary</a></li>
-                    <li> <a class="fw-semibold" href="">Occupancy Status</a> </li>
+                    <li> <a class="fw-semibold" href="occup.php">Occupancy Status</a> </li>
                     <li> <a class="fw-semibold" href="">Units</a> </li>
-                    <li> <a class="fw-semibold" href="">Rent Collection</a>  </li>
+                    <li> <a class="fw-semibold" href="rent.php">Rent Collection</a>  </li>
                     <li> <a class="fw-semibold" href="">Financials</a> </li>
                 </ul>
             </div>

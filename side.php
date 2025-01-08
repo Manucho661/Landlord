@@ -1,14 +1,15 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
- </head>
- <body>
-  
- <!-- Sidebar -->
- <div id="sidebar"  class="sidebar d-flex flex-column">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="ind.css"> -->
+</head>
+<body>
+    <!-- Sidebar -->
+  <div id="sidebar"  class="sidebar d-flex flex-column">
 
 <h2 class="text-center py-3">Sidebar</h2>
 <a href="#dashboard" onclick="toggleItems()">
@@ -18,6 +19,7 @@
 <!-- Hidden items -->
 <div id="items" class="hidden-items">
     <ul>
+    <a href=""><li>Property</li></a>
         <a href=""><li>Property</li></a>
         <a href=""><li>Tenants</li></a>
         <a href=""><li>Rent Collection</li></a>
@@ -34,8 +36,5 @@
 </div>
 
 
- </body>
- </html>
- 
- 
- 
+</body>
+</html>
