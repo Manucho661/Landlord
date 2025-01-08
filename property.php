@@ -125,10 +125,10 @@ margin-top: 40px;
 
 <div class="content" id="mainContent">
 
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row" > <!-- first row -->
-            <div class="col-3">
+            <div class="col-lg-8">
                 <div class="propName">
                     <p>CROWN Z</p>
                 </div>
