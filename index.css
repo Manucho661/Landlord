@@ -188,3 +188,7 @@ z-index: 1000;      /* Ensure it stays on top */
 background-color:#FFC107;
 color: #00192D;
 }
+
+.mainContent{
+  height: 100%;
+}
