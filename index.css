@@ -49,8 +49,7 @@ body {
 
 /* sidebar style */
 .sidebar {
-  margin-top: 20px;
-  height: 100vh;
+  height: 90%;
   position: fixed;
   width: 250px;
   background-color:#00192D; /* Darker Blue */
