@@ -22,7 +22,7 @@
         }
     .content{
         /* height: 90%; */
-         margin-top: 10%; 
+         /* margin-top: 10%;  */
          position: absolute;
          height: 90%;
          width: 80vw;
@@ -32,7 +32,7 @@
             margin: 0; /* Remove default margin */
             padding: 0; /* Remove default padding */
         }
-        .full-width-container {
+    .full-width-container {
             padding: 15px; /* Add a small padding for better appearance */
         }
     
@@ -43,7 +43,7 @@
         height: 40%;
     }
     .content{
-        margin-top: 10%;
+        /* margin-top: 10%; */
         position: absolute;
         height: 90%;
     }
@@ -77,7 +77,6 @@ ul{
     list-style: none; /* Removes bullets */
     justify-content: space-between;
 
-
 }
 a{
     
@@ -86,15 +85,8 @@ a{
     color:#FFC107;
 
 }
-.propNav{
-         /* margin-top: 80px;  */
-         width: 80%;
 
-}
-.propNav a{
-    font-size: 12px;
-   
-}
+
 .propNav :hover{
     color: #00192D;
 }
@@ -147,32 +139,33 @@ margin-top: 40px;
 
 
 <div class="content" id="mainContent">
+                <div class="propName">
+                    <p>CROWN Z</p>
+                </div>
 
     <div class="container-fluid">
-
-        <div class="row" > <!-- first row -->
-            <div class="col-lg-8">
+        
+        <!-- <div class="row" > <!-- first row -->
+            <!-- <div class="col-lg-8">
                 <div class="propName">
                     <p>CROWN Z</p>
                 </div>
             </div>
+        </div> --> 
+
+       
+
+        <div class="row propNav">
+            
+            <div class="col-md-2 fw-semibold"><a href="">Summary</a></div>
+            <div class="col-md-2 fw-semibold"><a href="">Occupancy</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="">Units</a> </div>
+            <div class="col-md-2 fw-semibold"> <a href=""> Rent</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="">Financials</a>  </div>
+            <hr>
+
         </div>
 
-        <div class="row mt-5" >  <!-- second row -->
-            <div class="propNav">
-                <ul>
-                    <li> <a class="fw-semibold" href="">Summary</a></li>
-                    <li> <a class="fw-semibold" href="occup.php">Occupancy Status</a> </li>
-                    <li> <a class="fw-semibold" href="">Units</a> </li>
-                    <li> <a class="fw-semibold" href="rent.php">Rent Collection</a>  </li>
-                    <li> <a class="fw-semibold" href="">Financials</a> </li>
-                </ul>
-            </div>
-                    
-
-        </div>
-
-        <hr>
 
         <div class="row" style="height: 50%;"> <!-- third row -->
                 <div class="col-lg-6">
@@ -185,8 +178,8 @@ margin-top: 40px;
                     </div>
                 </div>
 
-                <div class="col-3">
-                    <div style="font-size: 10px;">
+                <div class="col-6">
+                    <div style="font-size: 1em;">
                         <div class="address">
                             <p class="fw-semibold">Address/Location</p>
                             <p>
