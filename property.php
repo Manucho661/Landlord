@@ -39,13 +39,7 @@
 
     <div class="container-fluid">
         
-        <!-- <div class="row" > <!-- first row -->
-            <!-- <div class="col-lg-8">
-                <div class="propName">
-                    <p>CROWN Z</p>
-                </div>
-            </div>
-        </div> --> 
+        
 
        
 

@@ -65,6 +65,7 @@ body {
   flex-grow: 1;
   transition: margin-left 0.3s ease;
   margin-top: 10vh;
+  
 }
 
 .toggle-btn {
@@ -184,6 +185,7 @@ color: #00192D;
 .mainContent{
   height: 100%;
 }
+
 .item electronics{
   margin-left: 80%;
 }
