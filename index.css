@@ -19,17 +19,15 @@ body {
   color: white;
   padding: 20px;
   text-align: center;
-  position: fixed;
+   position: fixed; 
    width: 100%;
   top: 0;
-  height: 10%;
+  height: 10vh;
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   
 }
-.header h1 {
-  margin: 0;
-}
+
 .nav {
   margin-top: 10px;
 }
@@ -42,10 +40,7 @@ body {
 .nav a:hover {
   text-decoration: underline;
 }
-.content {
-  margin-top: 50px;
-  padding: 80px 20px; /* Add padding to accommodate fixed header */
-}
+
 
 /* sidebar style */
 .sidebar {
@@ -69,6 +64,7 @@ body {
   padding: 20px;
   flex-grow: 1;
   transition: margin-left 0.3s ease;
+  margin-top: 10vh;
 }
 
 .toggle-btn {
@@ -145,11 +141,6 @@ border-bottom: 1px solid darkblue; /* Border between items */
 border-bottom: none; /* Remove border from the last item */
 }
 /* Container for right-side icons in header */
-.header-icons {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
 
 /* Common styles for all icons */
 .icon-button {

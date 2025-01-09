@@ -11,16 +11,10 @@
 <body>
 <div class="header">
     <div class="nav">
-    <!-- Profile Icon -->
-    <!-- <button class="icon-button" onclick="viewProfile()">
-            <i class="fas fa-user-circle"></i>  Profile Icon -->
-        <!-- </button> --> 
-    <!-- Logout Icon -->
-     <!-- <button class="icon-button" onclick="logout()">
-      <i class="fas fa-sign-out-alt"></i>  Logout Icon -->
-        <!-- </button> --> 
-
+      <p>header</p>
+    
     </div>
+
   </div>
 </body>
 </html>

@@ -4,123 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css"> 
+     <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="Property.css">
+ 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<style>
-     .footer {
-            background-color: #343a40; /* Dark gray background */
-            color: white; /* White text */
-            padding: 20px 0;
-        }
-        .footer a {
-            color: #f8f9fa; /* Light gray links */
+    <style>
+        a{
             text-decoration: none;
         }
-        .footer a:hover {
-            color: #adb5bd; /* Slightly darker gray on hover */
-        }
-    .content{
-        /* height: 90%; */
-         /* margin-top: 10%;  */
-         position: absolute;
-         height: 90%;
-         width: 80vw;
-    }
-
-    body {
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-        }
-    .full-width-container {
-            padding: 15px; /* Add a small padding for better appearance */
-        }
-    
-    .sidebar{
-        height: 100%;
-    }
-    .container .row{
-        height: 40%;
-    }
-    .content{
-        /* margin-top: 10%; */
-        position: absolute;
-        height: 90%;
-    }
-    .content .propName{
-        /* text-align: end; */
-        /* width: 24%; */
-    }
-.content .propName p{
-/* font-size: 25px; 
-/* position: absolute; */
-font-family: 'Playfair Display', serif; /* Elegant for creative projects */
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 4px;
-    font-weight: 400; /* Lighter weight for a faint look */
-    letter-spacing: 1px; /* Slight spacing for an airy feel */
-    color:grey;
-
-}
-.content .propName a{
-    text-decoration: none;
-    color:#FFC107;
-}
-
-.content hr{
-    /* margin-top: 80px; */
-    width: 80%;
-}
-ul{
-    display: flex;
-    list-style: none; /* Removes bullets */
-    justify-content: space-between;
-
-}
-a{
-    
-    list-style: none; /* Removes bullets */
-    text-decoration: none;
-    color:#FFC107;
-
-}
-
-
-.propNav :hover{
-    color: #00192D;
-}
-.propAddress{
-/* margin-top: 10px; */
-/* width: 80%; */
-display:flex;
-/* align-items: center; */
-}
-.details{
-    display: flex;
-}
-.details img{
-    border-radius: 10px;
-}
-button{
-    background-color: #00192D;
-    color:#FFC107;
-    border:none;
-    font-size: 12px;
-    border-radius: 5px;
-    width: 5vw;
-    position: relative;
-    bottom: 0;
-}
-
-.col-3 .EDIT{
-/* position: relative; */
-margin-top: 40px;
-
-}
-
-</style>
-
+    </style>
 </head>
 <body>
     <?php include 'topbar.php'?>
@@ -138,9 +31,10 @@ margin-top: 40px;
 
 
 
-<div class="content" id="mainContent">
+<div class="content">
+    
                 <div class="propName">
-                    <p>CROWN Z</p>
+                    <p>Properties/CROWN Z</p>
                 </div>
 
     <div class="container-fluid">
@@ -155,7 +49,7 @@ margin-top: 40px;
 
        
 
-        <div class="row propNav">
+        <div class="row propNav ">
             
             <div class="col-md-2 fw-semibold"><a href="">Summary</a></div>
             <div class="col-md-2 fw-semibold"><a href="">Occupancy</a>  </div>
@@ -178,8 +72,8 @@ margin-top: 40px;
                     </div>
                 </div>
 
-                <div class="col-6">
-                    <div style="font-size: 1em;">
+                <div class="col-6 text-justify">
+                    <div style="font-size: 1em; ">
                         <div class="address">
                             <p class="fw-semibold">Address/Location</p>
                             <p>
