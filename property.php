@@ -32,7 +32,7 @@
             margin: 0; /* Remove default margin */
             padding: 0; /* Remove default padding */
         }
-        .full-width-container {
+    .full-width-container {
             padding: 15px; /* Add a small padding for better appearance */
         }
     
@@ -85,15 +85,8 @@ a{
     color:#FFC107;
 
 }
-.propNav{
-         /* margin-top: 80px;  */
-         width: 80%;
 
-}
-.propNav a{
-    font-size: 1rem;
-   
-}
+
 .propNav :hover{
     color: #00192D;
 }
@@ -160,26 +153,15 @@ margin-top: 40px;
             </div>
         </div> --> 
 
-        <div class="row mt-5" >  <!-- second row -->
-            <div class="propNav">
-                <ul>
-                    <li> <a class="fw-semibold" href="">Summary</a></li>
-                    <li> <a class="fw-semibold" href="occup.php">Occupancy Status</a> </li>
-                    <li> <a class="fw-semibold" href="">Units</a> </li>
-                    <li> <a class="fw-semibold" href="rent.php">Rent Collection</a>  </li>
-                    <li> <a class="fw-semibold" href="">Financials</a> </li>
-                </ul>
-            </div>
-                    
+       
 
-        </div>
-
-        <div class="row">
-            <div class="col-md-2 fw-semibold">Summary</div>
-            <div class="col-md-2 ">Occupancy</div>
-            <div class="col-md-2 ">Units</div>
-            <div class="col-md-2 ">Rent</div>
-            <div class="col-md-2 ">Financials</div>
+        <div class="row propNav">
+            
+            <div class="col-md-2 fw-semibold"><a href="">Summary</a></div>
+            <div class="col-md-2 fw-semibold"><a href="">Occupancy</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="">Units</a> </div>
+            <div class="col-md-2 fw-semibold"> <a href=""> Rent</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="">Financials</a>  </div>
             <hr>
 
         </div>
@@ -196,8 +178,8 @@ margin-top: 40px;
                     </div>
                 </div>
 
-                <div class="col-3">
-                    <div style="font-size: 10px;">
+                <div class="col-6">
+                    <div style="font-size: 1em;">
                         <div class="address">
                             <p class="fw-semibold">Address/Location</p>
                             <p>
