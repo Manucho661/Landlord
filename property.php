@@ -22,7 +22,7 @@
         }
     .content{
         /* height: 90%; */
-         margin-top: 10%; 
+         /* margin-top: 10%;  */
          position: absolute;
          height: 90%;
          width: 80vw;
@@ -43,7 +43,7 @@
         height: 40%;
     }
     .content{
-        margin-top: 10%;
+        /* margin-top: 10%; */
         position: absolute;
         height: 90%;
     }
@@ -77,7 +77,6 @@ ul{
     list-style: none; /* Removes bullets */
     justify-content: space-between;
 
-
 }
 a{
     
@@ -92,7 +91,7 @@ a{
 
 }
 .propNav a{
-    font-size: 12px;
+    font-size: 1rem;
    
 }
 .propNav :hover{
@@ -147,16 +146,19 @@ margin-top: 40px;
 
 
 <div class="content" id="mainContent">
+                <div class="propName">
+                    <p>CROWN Z</p>
+                </div>
 
     <div class="container-fluid">
-
-        <div class="row" > <!-- first row -->
-            <div class="col-lg-8">
+        
+        <!-- <div class="row" > <!-- first row -->
+            <!-- <div class="col-lg-8">
                 <div class="propName">
                     <p>CROWN Z</p>
                 </div>
             </div>
-        </div>
+        </div> --> 
 
         <div class="row mt-5" >  <!-- second row -->
             <div class="propNav">
@@ -172,7 +174,16 @@ margin-top: 40px;
 
         </div>
 
-        <hr>
+        <div class="row">
+            <div class="col-md-2 fw-semibold">Summary</div>
+            <div class="col-md-2 ">Occupancy</div>
+            <div class="col-md-2 ">Units</div>
+            <div class="col-md-2 ">Rent</div>
+            <div class="col-md-2 ">Financials</div>
+            <hr>
+
+        </div>
+
 
         <div class="row" style="height: 50%;"> <!-- third row -->
                 <div class="col-lg-6">
