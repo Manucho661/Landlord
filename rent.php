@@ -34,9 +34,9 @@
 
 
 
-<button class="btn btn-primary top-right">ADD LEASE</button>
+<!-- <button class="btn btn-primary top-right">ADD LEASE</button> -->
 
- <a href="payment.php"><button class="btn btn-primary jt-right">RECEIVE PAYMENT</button> </a>
+ <!-- <a href="payment.php"><button class="btn btn-primary jt-right">DUMMY </button> </a> -->
 
  <div class="container py-5">
     <h1 class="mb-4">Filter Items</h1>
@@ -98,12 +98,12 @@
     <thead>
       <tr>  
         <th scope="col">Numbers</th>
-        <th scope="col">Tenant</th>
-        <th scope="col">Start-End</th>
-        <th scope="col">Days Remaining</th>
+        <th scope="col">Name</th>
+       
+        <th scope="col">Phone</th>
+        <th scope="col">Arrears</th>
         <th scope="col">Unit</th>
-        <th scope="col">Rent</th>
-        <th scope="col">Status</th>
+        <th scope="col">Amount_Paid</th>
       </tr>
     </thead>
     <tbody>
@@ -114,7 +114,7 @@
         <td>@mdo</td>
         <td>@mdo</td>
         <td>@mdo</td>
-        <td>@mdo</td>
+       
 
       </tr>
       <tr>
@@ -124,7 +124,7 @@
         <td>@fat</td>
         <td>@mdo</td>
         <td>@mdo</td>
-        <td>@mdo</td>
+      
       </tr>
       <tr>
         <th scope="row">3</th>
@@ -132,7 +132,7 @@
         <td>@twitter</td>
         <td>@mdo</td>
         <td>@mdo</td>
-        <td>@mdo</td>
+       
       </tr>
       <tr>
         <th scope="row">4</th>
@@ -140,7 +140,7 @@
         <td>@twitter</td>
         <td>@mdo</td>
         <td>@mdo</td>
-        <td>@mdo</td>
+       
       </tr>
       <tr>
         <th scope="row">1</th>
@@ -149,7 +149,7 @@
         <td>@mdo</td>
         <td>@mdo</td>
         <td>@mdo</td>
-        <td>@mdo</td>
+        
       </tr>
       <tr>
         <th scope="row">2</th>
@@ -158,7 +158,7 @@
         <td>@fat</td>
         <td>@mdo</td>
         <td>@mdo</td>
-        <td>@mdo</td>
+        
       </tr>
       <tr>
         <th scope="row">3</th>
@@ -166,7 +166,7 @@
         <td>@twitter</td>
         <td>@mdo</td>
         <td>@mdo</td>
-        <td>@mdo</td>
+       
       </tr>
       
       <tr>
@@ -175,7 +175,7 @@
         <td>@twitter</td>
         <td>@mdo</td>
         <td>@mdo</td>
-        <td>@mdo</td>
+      
       </tr>
 
 

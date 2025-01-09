@@ -55,7 +55,7 @@
             <div class="col-md-2 fw-semibold"><a href="occup.php">Occupancy</a>  </div>
             <div class="col-md-2 fw-semibold"> <a href="">Units</a> </div>
             <div class="col-md-2 fw-semibold"> <a href="rent.php"> Rent</a>  </div>
-            <div class="col-md-2 fw-semibold"> <a href="">Financials</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="financial.php">Financials</a>  </div>
             <hr>
 
         </div>
