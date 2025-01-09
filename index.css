@@ -7,26 +7,8 @@ body {
 }
 
 /* search bar */
-.search-bar {
-  align-items: center;
-  max-width: 500px;
-  margin: 0px;
-}
 
-/* header style */
-.header {
-  background-color:#FFFFFF; /* White*/
-  color: white;
-  padding: 20px;
-  text-align: center;
-   position: fixed; 
-   width: 100%;
-  top: 0;
-  height: 10vh;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
-}
+
 
 .nav {
   margin-top: 10px;
@@ -43,65 +25,11 @@ body {
 
 
 /* sidebar style */
-.sidebar {
-  height: 90%;
-  position: fixed;
-  width: 250px;
-  background-color:#00192D; /* Darker Blue */
-  color: white;
-}
-.sidebar a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
-}
-.sidebar a:hover {
-  background-color:#FFC107; /* RGB */
-}
-.content {
-  margin-left: 250px; /* Space for sidebar */
-  padding: 20px;
-  flex-grow: 1;
-  transition: margin-left 0.3s ease;
-  margin-top: 10vh;
-  
-}
 
-.toggle-btn {
-  position: absolute;
-  top: 10%;
-    /* Position it outside the sidebar */
-  /* left: 70%; */
-   background-color: transparent; 
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 999;
-}
-.toggle-btn .bar {
-  display: block;
-  width: 20px;
-   height: 2px; 
-   background-color: grey; 
-  margin: 4px 0;
-  transition: all 0.3s ease;
-}
-.sidebar.collapsed {
-  width: 0;
-  overflow: hidden;
-}
 
-.content .sidebar-expanded {
-  margin-left: 10px; /* When sidebar is expanded */
-}
-.content.sidebar-collapsed {
-  margin-left: 0; /* When sidebar is collapsed */
-  margin-right: 0;
-}
-.content h2{
-  margin-top: 50px;
-}
+
+
+
 .col{
   margin: 50px;
 
@@ -182,11 +110,8 @@ background-color:#FFC107;
 color: #00192D;
 }
 
-.mainContent{
-  height: 100%;
-}
+
 
 .item electronics{
   margin-left: 80%;
 }
-

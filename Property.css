@@ -14,9 +14,9 @@
 /* height: 90%; */
  /* margin-top: 10%;  */
  position: absolute;
- height: 90vh;
+ height: 90%;
+  width: 85vw; 
 
- /* width: 80vw; */
 }
 
 body {

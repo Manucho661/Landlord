@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
      <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Link to Font Awesome for icons -->
@@ -17,12 +18,13 @@
      <!-- Sidebar -->
   <div id="sidebar"  class="sidebar d-flex flex-column">
 
-    <h2 class="text-center py-3">Sidebar</h2>
-    <a href="index.php" onclick="toggleItems()">
-    <i class="fas fa-plus-circle"></i> <!-- Add Icon -->
-      Dashboard
+    <h2 class="text-center py-3">JENGOPAY</h2>
+
+    <a href=""><i class="fa-solid fa-gauge">Dashboard</i>
    </a>
-    <!-- Hidden items -->
+
+   <a href="#" onclick="toggleItems()"><i class="fas fa-plus-circle">Rentals</i> </a><!-- Add Icon -->
+  <!-- Hidden items -->
   <div id="items" class="hidden-items">
         <ul>
             <a href=""><li>Property</li></a>
@@ -31,6 +33,11 @@
            <a><li>Item 1</li></a>
 </ul>
   </div>
+  <a href=""><i class="fas fa-home">Leasing</i></a>
+  <a href=""><i class="fas fa-wrench">Maintenance</i></a>
+  <a href=""><i class="fas fa-comment">Communication</i></a>
+  <a href="#profile">Profile</a>
+  <a href="#profile">Profile</a>
     <a href="#profile">Profile</a>
     <a href="#settings">
     <i class="fas fa-cogs"></i> <!-- Settings Icon -->
@@ -42,16 +49,12 @@
 
 
       <div class="content" id="mainContent">
-
-        <button id="toggleBtn" class="toggle-btn">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-
-        <h2>Your Properties</h2>
+       
+           <?php include 'MenuIcon.php'?>
+            
+            <h2>Your Properties</h2>
         
-        <div class="container-fluid text-start">
+      <div class="container-fluid text-start">
           <div class="row row-cols-2 bg-blue row-cols-lg-5 g-2 g-lg-3">
             <div class="col-lg-4">
               <a href="property.php">

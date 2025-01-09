@@ -1,0 +1,75 @@
+#add-button{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color:  #FFC107; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color:#00192D; /* Dark gray text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  #add-button:hover{
+    background-color: #f7f7f7; /* Light gray hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  #compose-button{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color:  #FFC107; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    padding: 20px 10px;
+    font-size: 14px;
+    color:#00192D; /* Dark gray text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  #compose-button:hover{
+    background-color: #f7f7f7; /* Light gray hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .export-button {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color:  #FFC107; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color:#00192D; /* Dark gray text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .export-button:hover {
+    background-color: #f7f7f7; /* Light gray hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .export-button i {
+    font-size: 16px; /* Icon size */
+    color: #007bff; /* Icon color */
+  }
+  .filter-container {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  #filter-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

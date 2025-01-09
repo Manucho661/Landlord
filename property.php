@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link rel="stylesheet" href="index.css"> 
+     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="Property.css">
  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,17 +40,15 @@
 
     <div class="container-fluid">
         
-        
-
-       
 
         <div class="row propNav ">
             
-            <div class="col-md-2 fw-semibold"><a href="">Summary</a></div>
-            <div class="col-md-2 fw-semibold"><a href="">Occupancy</a>  </div>
+            <div class="col-md-2 fw-semibold"><a href="property.php">Summary</a></div>
+            <div class="col-md-2 fw-semibold"><a href="occup.php">Occupancy</a>  </div>
             <div class="col-md-2 fw-semibold"> <a href="">Units</a> </div>
-            <div class="col-md-2 fw-semibold"> <a href=""> Rent</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="rent.php"> Rent</a>  </div>
             <div class="col-md-2 fw-semibold"> <a href="">Financials</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="communications/announcements.php">Communications</a>  </div>
             <hr>
 
         </div>
