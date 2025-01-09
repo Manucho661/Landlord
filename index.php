@@ -17,12 +17,13 @@
      <!-- Sidebar -->
   <div id="sidebar"  class="sidebar d-flex flex-column">
 
-    <h2 class="text-center py-3">Sidebar</h2>
-    <a href="index.php" onclick="toggleItems()">
-    <i class="fas fa-plus-circle"></i> <!-- Add Icon -->
-      Dashboard
+    <h2 class="text-center py-3">JENGOPAY</h2>
+
+    <a href=""><i class="fa-solid fa-gauge">Dashboard</i>
    </a>
-    <!-- Hidden items -->
+
+   <a href="#" onclick="toggleItems()"><i class="fas fa-plus-circle">Rentals</i> </a><!-- Add Icon -->
+  <!-- Hidden items -->
   <div id="items" class="hidden-items">
         <ul>
             <a href=""><li>Property</li></a>
@@ -31,6 +32,11 @@
            <a><li>Item 1</li></a>
 </ul>
   </div>
+  <a href=""><i class="fas fa-home">Leasing</i></a>
+  <a href=""><i class="fas fa-wrench">Maintenance</i></a>
+  <a href=""><i class="fas fa-comment">Communication</i></a>
+  <a href="#profile">Profile</a>
+  <a href="#profile">Profile</a>
     <a href="#profile">Profile</a>
     <a href="#settings">
     <i class="fas fa-cogs"></i> <!-- Settings Icon -->

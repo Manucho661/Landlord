@@ -27,6 +27,7 @@
     }
   </style>
 </head>
+
 <body>
  <?php include 'topbar.php'?>
  
@@ -55,10 +56,6 @@
         <input type="text" id="filter-input" placeholder="Search...">
       </div>
       
-
-
-
-
     <div class="row mb-4">
         <div class="col-md-5">
             <select id="category" class="form-select">

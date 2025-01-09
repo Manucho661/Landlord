@@ -51,10 +51,10 @@
 
         <div class="row propNav ">
             
-            <div class="col-md-2 fw-semibold"><a href="">Summary</a></div>
-            <div class="col-md-2 fw-semibold"><a href="">Occupancy</a>  </div>
+            <div class="col-md-2 fw-semibold"><a href="property.php">Summary</a></div>
+            <div class="col-md-2 fw-semibold"><a href="occup.php">Occupancy</a>  </div>
             <div class="col-md-2 fw-semibold"> <a href="">Units</a> </div>
-            <div class="col-md-2 fw-semibold"> <a href=""> Rent</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="rent.php"> Rent</a>  </div>
             <div class="col-md-2 fw-semibold"> <a href="">Financials</a>  </div>
             <hr>
 
