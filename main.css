@@ -28,6 +28,7 @@ body{
     width: 250px;
     background-color:#00192D; /* Darker Blue */
     color: white;
+    top: 6vh;
   }
   .sidebar a {
     color: white;
@@ -51,7 +52,8 @@ body{
     padding: 20px;
     flex-grow: 1;
     transition: margin-left 0.3s ease;
-    margin-top: 6vh; /* Add space for header */
+    margin-top: 10vh; /* Add space for header */
+    
 
  
 }
