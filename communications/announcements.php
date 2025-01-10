@@ -19,7 +19,7 @@
 
 <div id="content">
      <?php include '../MenuIcon.php'?> 
-    <div class="container">
+    <div class="container-fluid">
         
         <div class="row">
             <div class="propName">
