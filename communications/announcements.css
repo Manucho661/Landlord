@@ -1,0 +1,43 @@
+.propName{
+    /* font-size: 25px; 
+    /* position: absolute; */
+    font-family: 'Playfair Display', serif; /* Elegant for creative projects */
+    /* font-size: 25%; */
+    font-weight: bold;
+    
+    font-weight: 400px; /* Lighter weight for a faint look */
+    letter-spacing: 1px; /* Slight spacing for an airy feel */
+    color:grey; 
+
+    }
+.secondRow{
+    background: #00192D;
+}
+.row a{
+    color:#FFC107;
+}
+.custom-button{
+    border: none;
+    
+    justify-content: end;
+    
+    
+    
+    /* width: auto; Ensures the button width is determined by its content */
+
+}
+button{
+    
+    border-radius: 10%;
+    background-color:#FFC107;
+    border-radius: 10px;
+    border: #FFC107;
+    color: #00192D;
+    font-weight: bold; 
+
+}
+th {
+    /* font-weight: 400; Reduce the font weight to normal */
+    font-size: 12px;
+}
+

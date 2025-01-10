@@ -10,28 +10,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Link to Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>main.js</script>
     </head>
+
 <body>
-    
+
+
+
   <?php include 'topbar.php'?>
 
      <!-- Sidebar -->
-  <div id="sidebar"  class="sidebar d-flex flex-column">
-
-    <h2 class="text-center py-3">JENGOPAY</h2>
-
-    <a href=""><i class="fa-solid fa-gauge">Dashboard</i><br><br>
-   </a>
-  <a href=""><i class="fas fa-home">Leasing</i></a><br>
-  <a href=""><i class="fas fa-wrench">Maintenance</i></a><br>
-  <a href=""><i class="fas fa-comment">Communication</i></a>
-    <a href="#settings"><i class="fas fa-cogs"></i> <!-- Settings Icon -->Settings</a>
-    <a href="#help">Help</a>
-   
-  </div>
+  
+     <?php include 'sidebar.php'?>
 
 
-      <div class="content" id="mainContent">
+      <div id="content">
        
            <?php include 'MenuIcon.php'?>
             
@@ -105,44 +98,7 @@
     
 </div>
 
-
-<script>
-
-const sidebar = document.getElementById('sidebar');
-    const toggleBtn = document.getElementById('toggleBtn');
-    const mainContent = document.getElementById('mainContent');
-
-    toggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('collapsed');  // Toggle the collapsed class
-
-    // Adjust content's margin-left based on sidebar state
-    if (sidebar.classList.contains('collapsed')) {
-        mainContent.classList.remove('sidebar-expanded');
-        mainContent.classList.add('sidebar-collapsed');
-      } else {
-        mainContent.classList.remove('sidebar-collapsed');
-        mainContent.classList.add('sidebar-expanded');
-      }
-
-
-    });
-</script>
-
-<script>
-        function toggleItems() {
-            const items = document.getElementById('items');
-            const button = document.getElementById('showButton');
-
-            // Toggle visibility of items
-            if (items.style.display === 'none' || items.style.display === '') {
-                items.style.display = 'block';
-                button.textContent = 'Hide Items'; // Change button text
-            } else {
-                items.style.display = 'none';
-                button.textContent = 'Show Items'; // Revert button text
-            }
-        }
-    </script>
+    <script src="main.js"></script>
 <!-- Bootstrap JS (optional, for interactivity if needed) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

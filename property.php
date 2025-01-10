@@ -19,20 +19,14 @@
 <body>
     <?php include 'topbar.php'?>
 
-    <div id="sidebar"  class="sidebar">
-
-        <h2 class="text-center py-3">Sidebar</h2>
-
-        <a href="#dashboard">Dashboard</a>
-        <a href="#profile">Profile</a>
-        <a href="#settings">Settings</a>
-        <a href="#help">Help</a>
-        <a href="#logout">Logout</a>
-    </div>
+    <?php include 'sidebar.php'?>
 
 
 
-<div class="content">
+<div id="content">           
+    <?php include 'MenuIcon.php'?>
+
+
     
                 <div class="propName">
                     <p>Properties/CROWN Z</p>
@@ -47,7 +41,8 @@
             <div class="col-md-2 fw-semibold"><a href="occup.php">Occupancy</a>  </div>
             <div class="col-md-2 fw-semibold"> <a href="">Units</a> </div>
             <div class="col-md-2 fw-semibold"> <a href="rent.php"> Rent</a>  </div>
-            <div class="col-md-2 fw-semibold"> <a href="">Financials</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="financial.php">Financials</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="communications/announcements.php">Communications</a>  </div>
             <hr>
 
         </div>
@@ -129,8 +124,8 @@
     </div>
 
 </div>
-
-    <!-- Bootstrap
+    
+<script src="main.js"></script>
 
 
 

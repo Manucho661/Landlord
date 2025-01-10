@@ -43,43 +43,98 @@
         tr:nth-child(even) {
             background-color: #f9f9f9;
         }
-        .dropdown {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
-        .dropdown .toggle-btn {
-            margin-right: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            color: #007bff;
-            background: none;
-            border: none;
-            outline: none;
-        }
-        .dropdown-content {
-            display: none;
-            padding-left: 20px;
-            background-color: #f9f9f9;
-        }
-        .dropdown-content td {
-            border: none;
-            padding: 4px 8px;
-        }
-        .dropdown.open .dropdown-content {
-            display: table-row;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        
+        .custom-dropdown-container {
+      width: 300px;
+    }
+
+    .custom-dropdown-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .custom-dropdown-header:hover {
+      background-color: #0056b3;
+    }
+
+    .custom-dropdown-header .toggle-icon {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .custom-dropdown-content {
+      display: none;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-top: 5px;
+      overflow: hidden;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-dropdown-content.active {
+      display: block;
+    }
+
+    .custom-dropdown-content a {
+      display: block;
+      padding: 10px 15px;
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #ddd;
+      transition: background-color 0.3s ease;
+    }
+
+    .custom-dropdown-content a:last-child {
+      border-bottom: none;
+    }
+
+    .custom-dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .nested-dropdown-content {
+      display: none;
+      margin-top: 5px;
+      background-color: #e9ecef;
+      border-radius: 5px;
+    }
+
+    .nested-dropdown-content.active {
+      display: block;
+    }
+
+    .nested-dropdown-content a {
+      padding: 10px 20px;
+      background-color: #f8f9fa;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .nested-dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+    }
   </style>
 </head>
 <body>
- <?php include 'topbar.php'?>
 
  <!-- Sidebar -->
  <div id="sidebar"  class="sidebar d-flex flex-column">
@@ -98,11 +153,8 @@
 
 
 <div class="content">
-
-
- <div class="container py-5">
-    <p>PROPERTY</p>
-
+    <div class="container py-5">
+        <p>PROPERTY</p>
     <!-- Filter Section -->
     <div class="row mb-4">
 
@@ -156,18 +208,68 @@
         </thead>
         <tbody>
             <tr>
-                <td><a href="https://ty13.managebuilding.com" target="_blank">ty13.managebuilding.com</a></td>
+                <td>
+
+    <div class="custom-dropdown-container">
+    <div class="custom-dropdown-header" id="dropdownHeader">
+      <span>INCOME& EXPENSE</span>
+      <span class="toggle-icon" id="toggleIcon">+</span>
+    </div>
+    <div class="custom-dropdown-content" id="dropdownContent">
+      <a href="#" class="parent-item">INCOME</a>
+      <div class="nested-dropdown-content" id="nestedDropdown1">
+        <a href="#">OTHER INCOME</a>
+        <a href="#">INCOME</a>
+      </div>
+      <a href="#" class="parent-item">EXPENSE</a>
+      <div class="nested-dropdown-content" id="nestedDropdown2">
+        <a href="#">Nested Item 1</a>
+        <a href="#">Nested Item 2</a>
+      </div>
+      <a href="#" class="parent-item">Item 3</a>
+      <div class="nested-dropdown-content" id="nestedDropdown3">
+        <a href="#">Nested Item 1</a>
+        <a href="#">Nested Item 2</a>
+      </div>
+    </div>
+  </div>
+            </td>
                 <td>$0.00</td>
                 <td>$0.00</td>
                 <td>$12,092.55</td>
                 <td>$12,092.55</td>
             </tr>
             <tr>
-                <td><a href="https://example.com/100-main-ave" target="_blank">100 Main Ave (duplex)</a></td>
+                <td>
+    <div class="custom-dropdown-container">
+    <div class="custom-dropdown-header" id="dropdownHeader">
+      <span>INCOME& EXPENSE</span>
+      <span class="toggle-icon" id="toggleIcon">+</span>
+    </div>
+    <div class="custom-dropdown-content" id="dropdownContent">
+      <a href="#" class="parent-item">INCOME</a>
+      <div class="nested-dropdown-content" id="nestedDropdown1">
+        <a href="#">OTHER INCOME</a>
+        <a href="#">INCOME</a>
+      </div>
+      <a href="#" class="parent-item">EXPENSE</a>
+      <div class="nested-dropdown-content" id="nestedDropdown2">
+        <a href="#">Nested Item 1</a>
+        <a href="#">Nested Item 2</a>
+      </div>
+      <a href="#" class="parent-item">Item 3</a>
+      <div class="nested-dropdown-content" id="nestedDropdown3">
+        <a href="#">Nested Item 1</a>
+        <a href="#">Nested Item 2</a>
+      </div>
+    </div>
+  </div>
+</td>
+                <td>$2,200.00</td>
                 <td>$2,200.00</td>
                 <td>$1,495.95</td>
                 <td>$2,250.00</td>
-                <td>$5,945.95</td>
+                <!-- <td>$5,945.95</td> -->
             </tr>
             <tr>
                 <td><a href="https://example.com/150-main-ave" target="_blank">150 Main Ave (fourplex)</a></td>
@@ -221,5 +323,30 @@
         </tbody>
     </table>
 
+    <script>
+    const dropdownHeader = document.getElementById('dropdownHeader');
+    const dropdownContent = document.getElementById('dropdownContent');
+    const toggleIcon = document.getElementById('toggleIcon');
+
+    const parentItems = document.querySelectorAll('.parent-item');
+    const nestedDropdowns = document.querySelectorAll('.nested-dropdown-content');
+
+    dropdownHeader.addEventListener('click', () => {
+      dropdownContent.classList.toggle('active');
+
+      if (dropdownContent.classList.contains('active')) {
+        toggleIcon.textContent = '-';
+      } else {
+        toggleIcon.textContent = '+';
+      }
+    });
+
+    parentItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        const nestedDropdown = nestedDropdowns[index];
+        nestedDropdown.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
