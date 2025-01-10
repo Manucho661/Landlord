@@ -1,7 +1,6 @@
 
-  
  <!-- Sidebar -->
-<div id="sidebar"  class="sidebar d-flex flex-column">
+<div id="sidebar"  class="sidebar collapsed d-flex flex-column">
   <a href="#dashboard" onclick="toggleItems()">
     <i class="fas fa-plus-circle"></i> <!-- Add Icon -->
       Dashboard

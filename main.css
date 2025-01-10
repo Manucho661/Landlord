@@ -25,7 +25,7 @@ body{
     
     height: calc(100vh - 6vh); /* Ensure it fills the remaining height */
     position: fixed;
-    width: 250px;
+    width: 0px;
     background-color:#00192D; /* Darker Blue */
     color: white;
     top: 6vh;
@@ -44,11 +44,14 @@ body{
     width: 0;
     overflow: hidden;
   }
-  
+  .sidebar.expanded {
+    width: 250px;
+    overflow: hidden;
+  }
 /* Content styles */
 
-.content{
-    margin-left: 255px; /* Space for sidebar */
+#content{
+    margin-left: 0px; /* Space for sidebar */
     padding: 20px;
     flex-grow: 1;
     transition: margin-left 0.3s ease;
@@ -57,20 +60,20 @@ body{
 
  
 }
-  .content .sidebar-expanded {
-    margin-left: 10px; /* When sidebar is expanded */
+  #content.sidebar-expanded {
+    margin-left: 255px; /* When sidebar is expanded */
   }
-  .content.sidebar-collapsed {
+  #content.sidebar-collapsed {
     margin-left: 0; /* When sidebar is collapsed */
     margin-right: 0;
   }
 
-  .content h2{
+  #content h2{
     margin-top: 50px;
   }
 
 
-  .mainContent{
+  #mainContent{
     height: 100%;
   }
 
@@ -90,6 +93,10 @@ body{
     padding: 10px;
     cursor: pointer;
     z-index: 999;
+    width: fit-content;
+
+    
+
   }
   .toggle-btn .bar {
     display: block;
