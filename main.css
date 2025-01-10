@@ -91,6 +91,10 @@ body{
     padding: 10px;
     cursor: pointer;
     z-index: 999;
+    width: fit-content;
+
+    
+
   }
   .toggle-btn .bar {
     display: block;
