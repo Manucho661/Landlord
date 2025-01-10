@@ -18,7 +18,7 @@
 
 
 <div id="content">
-    <!-- <?php include '../MenuIcon.php'?> -->
+     <?php include '../MenuIcon.php'?> 
     <div class="container">
         
         <div class="row">
@@ -32,49 +32,91 @@
             <div class="col-md-2 fw-semibold"><a href="occup.php" class="text-decoration-none">Emails</a>  </div>
             <div class="col-md-2 fw-semibold"> <a href="" class="text-decoration-none">Received Messages</a> </div>
             <div class="col-md-2 fw-semibold"> <a href="rent.php" class="text-decoration-none"> Mailings</a>  </div>
-            <div class="col-md-2 fw-semibold"> <a href="financial.php" class="text-decoration-none" >Financials</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="financial.php" class="text-decoration-none" >Automated Emails</a>  </div>
             
         </div>
 
-        <div class="row mt-5" >
-           <div class="custom-button" style="display: flex; justify-content:end;" >
-           <button class="rounded p-2">Create Announcement</button>
-           </div> 
-            <!-- <div col="col"><button>CREATE ANNOUNCEMENT</button></div> --> 
+        <div class="announcement-section mt-5">
+            <div class="row mt-2" >
+            <div class="custom-button" style="display: flex; justify-content:end;" >
+            <button class="rounded p-2">Create Announcement</button>
+            </div> 
+                <!-- <div col="col"><button>CREATE ANNOUNCEMENT</button></div> --> 
+            </div>
+
+            <div class="row mt-2">
+
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">SENT</th>
+                                <th scope="col">TITLE</th>
+                                <th scope="col">MESSAGE</th>
+                                <th scope="col">DESTINATIONS</th>
+                                <th scope="col">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1/7/11</th>
+                                <td>Rent Arrears</td>
+                                <td>All the tenants who would have not cleared the rent arrears by 10st of next month</td>
+                                <td> To All tenants</td>
+                                <td> <button type="button" class="btn text-danger">REMOVE</button>
+                                </td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2/7/11</th>
+                        <td>Jacob</td>
+                        <td>All the tenants who would have not cleared the rent arrears by 10st of next month</td>
+                        <td>To upper class Tenants</td>
+                        <td> <button type="button" class="btn text-danger">REMOVE</button>
+
+                        </tr>
+                        <tr>
+                                <th scope="row">3/7/11</th>
+                        <td>Larry</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quisquam!</td>
+                        <td>To lower class tenants</td>
+                        <td> <button type="button" class="btn text-danger">REMOVE</button>
+
+                            </tr>
+                        </tbody>
+                        </table>
+
+            </div>
+
+            
         </div>
 
-        <div class="row mt-2">
+        <div class="row">
+        <div class="row mt-5">
+            <!-- About Section -->
+            <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>We are committed to providing the best service and experience for our users. Contact us for more information.</p>
+                </div>
+                <!-- Links Section -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p>
+                        Email: <a href="mailto:info@example.com">info@example.com</a><br>
+                        Phone: +123 456 7890<br>
+                        Address: 123 Main St, City, Country
+                    </p>
+                </div>
+        </div>
 
-        <table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">SENT</th>
-      <th scope="col">TITLE</th>
-      <th scope="col">MESSAGE</th>
-      <th scope="col">DESTINATIONS</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
 
         </div>
 

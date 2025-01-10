@@ -9,6 +9,7 @@
     letter-spacing: 1px; /* Slight spacing for an airy feel */
     color:grey; 
 
+
     }
 .secondRow{
     background: #00192D;
@@ -39,5 +40,16 @@ button{
 th {
     /* font-weight: 400; Reduce the font weight to normal */
     font-size: 12px;
+    
+}
+.announcement-section{
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 2%;
+    margin-top: 2px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Horizontal offset, Vertical offset, Blur radius, Shadow color */
+
+}
+td{
+    font-size: 80%;
 }
 

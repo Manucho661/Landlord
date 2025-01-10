@@ -19,16 +19,16 @@ const sidebar = document.getElementById('sidebar');
 
 
 
-    function toggleItems() {
-        const items = document.getElementById('items');
-        const button = document.getElementById('showButton');
+    // function toggleItems() {
+    //     const items = document.getElementById('items');
+    //     const button = document.getElementById('showButton');
 
-        // Toggle visibility of items
-        if (items.style.display === 'none' || items.style.display === '') {
-            items.style.display = 'block';
-            button.textContent = 'Hide Items'; // Change button text
-        } else {
-            items.style.display = 'none';
-            button.textContent = 'Show Items'; // Revert button text
-        }
-    }
+    //     // Toggle visibility of items
+    //     if (items.style.display === 'none' || items.style.display === '') {
+    //         items.style.display = 'block';
+    //         button.textContent = 'Hide Items'; // Change button text
+    //     } else {
+    //         items.style.display = 'none';
+    //         button.textContent = 'Show Items'; // Revert button text
+    //     }
+    // }
