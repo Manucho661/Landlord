@@ -30,7 +30,7 @@
             
             <h2>Your Properties</h2>
         
-      <div class="container-fluid text-start">
+      <div class="container-fluid text-start prop">
           <div class="row row-cols-2 bg-blue row-cols-lg-5 g-2 g-lg-3">
             <div class="col-lg-4">
               <a href="property.php">

@@ -3,7 +3,10 @@ body{
     margin: 0; /* Remove default body margin */
 
 }
+.prop:hover {
+  transform: scale(1.0);
 
+}
 .header {
     background-color:#FFFFFF; /* White*/
     color: white;
