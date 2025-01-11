@@ -14,6 +14,25 @@
         a{
             text-decoration: none;
         }
+        .row .col-3{
+            /* background-color:white; */
+            margin-right:1%;
+            
+        }
+        body{
+            
+            background-color: rgba(128, 128, 128, 0.1);
+        }
+        .summaryItem{
+            font-family: 'Playfair Display', serif; /* Elegant for creative projects */
+font-size: 25px;
+font-weight: bold;
+
+font-weight: 400; /* Lighter weight for a faint look */
+letter-spacing: 1px; /* Slight spacing for an airy feel */
+color:grey;
+
+        }
     </style>
 </head>
 <body>
@@ -23,18 +42,44 @@
 
 
 
-<div id="content">           
+<div id="content" >           
     <?php include 'MenuIcon.php'?>
 
+                
 
-    
-                <div class="propName">
-                    <p>Properties/CROWN Z</p>
-                </div>
 
     <div class="container-fluid">
-        
+        <div class="row mb-3">
+            <div class="col-3 bg-white rounded">
+                <div class="summaryItem">PROPERTY</div>
+                <div>CROWN z</div>
 
+            </div>
+
+            <div class="col-3 bg-white rounded">
+                <div class="summaryItem" >Address/location</div>
+                <div> John Doe
+                                123 Maple Street
+                                Springfield, IL 62704
+                                USA         
+                </div>
+
+            </div>
+
+            <div class="col-3 bg-white rounded">
+                <div class="summaryItem">Manager</div>
+                <div>Kevin Mbugua</div>
+
+            </div>
+
+            <div class="col-2 bg-white">
+                <div class="summaryItem">Units</div>
+                <div>123</div>
+
+            </div>
+
+        </div>
+        
         <div class="row propNav ">
             
             <div class="col-md-2 fw-semibold"><a href="property.php">Summary</a></div>
@@ -47,48 +92,62 @@
 
         </div>
 
+        
+        <div class="Tenant-section mt-5">
 
-        <div class="row" style="height: 50%;"> <!-- third row -->
-                <div class="col-lg-6">
-
-                    <div class="details" style="width:100%;">
-
-                        <div>
-                            <img src="./images/second.png" alt="" width="100%" height="100%"> 
-                        </div>
+                <div class="row mt-2" >
+                    <div class="custom-button" style="display: flex; justify-content:end;" >
+                       <button class="rounded p-2">ADD A TENANT</button>
                     </div>
                 </div>
 
-                <div class="col-6 text-justify">
-                    <div style="font-size: 1em; ">
-                        <div class="address">
-                            <p class="fw-semibold">Address/Location</p>
-                            <p>
-                                John Doe
-                                123 Maple Street
-                                Springfield, IL 62704
-                                USA
-                            </p>
-                        </div>
+            <div class="row mt-3"> <!-- third row -->
+                
+                <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">OCCUPIED</th>
+                                        <th scope="col">NAME</th>
+                                        <th scope="col">PHONE</th>
+                                        <th scope="col">GENDER</th>
+                                        <th scope="col">UNIT</th>
+                                        <th scope="col">ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1/7/11</th>
+                                        <td>Kelvin Mbugua</td>
+                                        <td>0757414722/0753414721</td>
+                                        <td> MALE</td>
+                                        <td>E456</td>
+                                        <td> <button type="button" class="btn text-danger">REMOVE</button>
+                                        </td>
+                                </tr>
+                                <tr>
+                                <th scope="row">2/7/11</th>
+                                <td>Jacob Wesonga</td>
+                                <td>0758322543/01573798977</td>
+                                <td>MALE</td>
+                                <td>E537</td>
+                                <td> <button type="button" class="btn text-danger">REMOVE</button>
 
-                        <div class="Manager">
-                            <p class="fw-semibold">Manager</p>
-                            <p>KELVIN MBUGUA</p>
-                        </div>
+                                </tr>
+                                <tr>
+                                        <th scope="row">3/7/11</th>
+                                <td>Larry Madowo</td>
+                                <td>0758322543/01573798977</td>
+                                <td>FEMALE</td>
+                                <td>F10</td>
+                                <td> <button type="button" class="btn text-danger">REMOVE</button>
 
-                        <div class="Manager">
-                            <p class="fw-semibold">Units</p>
-                            <p>123 Rooms</p>
-                        </div>
+                                    </tr>
+                                </tbody>
+                </table>
+    
 
-                        <div class="EDIT" >
-                            <button>EDIT</button>
-                            
-                        </div>
-                    </div>
-
-                </div>            
-            
+            </div>            
+        </div>
 
             
         
@@ -122,6 +181,8 @@
         </div>
 
     </div>
+    
+    
 
 </div>
     

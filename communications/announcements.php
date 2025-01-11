@@ -10,6 +10,29 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
+    <style>
+
+            .row .col-3{
+            /* background-color:white; */
+            margin-right:1%;
+            
+        }
+            body{
+            
+            background-color: rgba(128, 128, 128, 0.1);
+        }
+            .summaryItem{
+                        font-family: 'Playfair Display', serif; /* Elegant for creative projects */
+                font-size: 25px;
+                font-weight: bold;
+
+                font-weight: 400; /* Lighter weight for a faint look */
+                letter-spacing: 1px; /* Slight spacing for an airy feel */
+                color:grey;
+
+        }
+    </style>
 </head>
 <body>
 <?php include '../topbar.php'?>
@@ -21,10 +44,35 @@
      <?php include '../MenuIcon.php'?> 
     <div class="container-fluid">
         
-        <div class="row">
-            <div class="propName">
-                <h4>  Properties/Crown Z/Communications</h4>
+    <div class="row mb-3">
+            <div class="col-3 bg-white rounded">
+                <div class="summaryItem">PROPERTY</div>
+                <div>CROWN z / Communications</div>
+
             </div>
+
+            <div class="col-3 bg-white rounded">
+                <div class="summaryItem" >Address/location</div>
+                <div> John Doe
+                                123 Maple Street
+                                Springfield, IL 62704
+                                USA         
+                </div>
+
+            </div>
+
+            <div class="col-3 bg-white rounded">
+                <div class="summaryItem">Manager</div>
+                <div>Kevin Mbugua</div>
+
+            </div>
+
+            <div class="col-2 bg-white">
+                <div class="summaryItem">Units</div>
+                <div>123</div>
+
+            </div>
+
         </div>
 
         <div class="row rounded  secondRow mt-5 p-3 align-items-center">
