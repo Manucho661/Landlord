@@ -78,8 +78,12 @@ color:#FFC107;
 
 
 .propNav :hover{
-color: #00192D;
+color: whitesmoke;
+transform: scale(1.2);
+
 }
+
+
 .propAddress{
 /* margin-top: 10px; */
 /* width: 80%; */
