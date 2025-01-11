@@ -25,11 +25,23 @@
         }
         .summaryItem{
             font-family: 'Playfair Display', serif; /* Elegant for creative projects */
-            font-size: 25px;
-            font-weight: bold;
-             font-weight: 400; /* Lighter weight for a faint look */
-             letter-spacing: 1px; /* Slight spacing for an airy feel */
-             color:grey;
+font-size: 25px;
+font-weight: bold;
+
+font-weight: 400; /* Lighter weight for a faint look */
+letter-spacing: 1px; /* Slight spacing for an airy feel */
+color:gray;
+
+        }
+        .summaryItemOne{
+            font-family: 'Playfair Display', serif; /* Elegant for creative projects */
+font-size: 25px;
+font-weight: bold;
+
+font-weight: 400; /* Lighter weight for a faint look */
+letter-spacing: 1px; /* Slight spacing for an airy feel */
+color: #00192D;
+
         }
     </style>
 </head>
@@ -80,12 +92,14 @@
         
         <div class="row propNav ">
             
-            <div class="col-md-2 fw-semibold"><a href="property.php">Summary</a></div>
-            <div class="col-md-2 fw-semibold"><a href="occup.php">Occupancy</a> </div>
+            <div class="col-md-2 fw-semibold active"><a href="property.php" style="color:white">Occupancy</a></div>
+            
             <div class="col-md-2 fw-semibold"> <a href="">Units</a> </div>
             <div class="col-md-2 fw-semibold"> <a href="rent.php"> Rent</a> </div>
             <div class="col-md-2 fw-semibold"> <a href="financial.php">Financials</a> </div>
             <div class="col-md-2 fw-semibold"> <a href="communications/announcements.php">Communications</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="communications/announcements.php">Inspections</a>  </div>
+
             <hr>
 
         </div>
@@ -147,8 +161,41 @@
             </div>            
         </div>
 
+        <div class="occupancy-summary mt-5">
             
+        <div class="row mb-3">
+            <div class="col-3 rounded" style="background:#FFC107">
+                <div class="summaryItemOne">TOTAL UNITS</div>
+                <hr>
+                <div class="text-white" > <b>50 UNITS</b>  </div>
+
+            </div>
+
+            <div class="col-3 rounded"  style="background:#FFC107" >
+                <div class="summaryItemOne rounded" >TENANTS</div>
+                <hr>
+                <div class="text-white"> <b>40 PERSONS </b>     
+                </div>
+
+            </div>
+
+            <div class="col-3 rounded"  style="background:#FFC107" >
+                <div class="summaryItemOne">VACANT UNITS</div>
+                <hr>
+                <div class="text-white" > <b> 10 UNITS</b>   </div>
+
+            </div>
+
+            <div class="col-2 rounded"  style="background:#FFC107" >
+                <div class="summaryItemOne">Units</div>
+                <hr>
+                <div class="text-white" >  <b>123 UNITS</b> </div>
+
+            </div>
+
+        </div>
         
+
         </div>
 
         <div class="row mt-5">
@@ -177,6 +224,15 @@
                     </p>
                 </div>
         </div>
+    
+        </div>
+
+        
+
+
+
+
+       
 
     </div>
     
