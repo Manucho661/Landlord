@@ -22,7 +22,8 @@ body{
 /* Sidebar Styles */
 
 .sidebar {
-    
+    font-family:'Times New Roman';
+    font-size: larger;
     height: calc(100vh - 6vh); /* Ensure it fills the remaining height */
     position: fixed;
     width: 0px;
@@ -32,7 +33,7 @@ body{
   }
   .sidebar a {
     color: white;
-    text-decoration: none;
+    text-decoration: wavy;
     padding: 10px 20px;
     display: block;
   }

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Header with Icons</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="index.css"  rel="stylesheet">
+  <link href="main.css"  rel="stylesheet">
   <style>
     .header {
       background-color: #f8f9fa; /* Light gray background */
@@ -21,16 +21,11 @@
 <body>
 <?php include 'topbar.php'?>
 
-<div id="sidebar"  class="sidebar d-flex flex-column">
+<?php include 'sidebar.php'?>
 
-<h2 class="text-center py-3">Sidebar</h2>
 
-<a href="#dashboard">Dashboard</a>
-<a href="#profile">Profile</a>
-<a href="#settings">Settings</a>
-<a href="#help">Help</a>
-<a href="#logout">Logout</a>
-</div>
+<div id="content" >           
+    <?php include 'MenuIcon.php'?>
 
 
 
@@ -49,9 +44,10 @@
       <div class="col-md-4">
         <select id="category" class="form-select">
           <option value="all">All Categories</option>
-          <option value="electronics">Electronics</option>
-          <option value="clothing">Clothing</option>
-          <option value="books">Books</option>
+          <option value="all">Tenants</option>
+          <option value="electronics">Arrears</option>
+          <option value="clothing">Units</option>
+          <option value="books">Amount</option>
         </select>
       </div>
     </div>
@@ -62,7 +58,7 @@
       <div class="col-md-4 item electronics">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Smartphone</h5>
+            <h5 class="card-title">Tenants</h5>
             <p class="card-text">Category: Electronics</p>
           </div>
         </div>
@@ -70,7 +66,7 @@
       <div class="col-md-4 item clothing">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">T-Shirt</h5>
+            <h5 class="card-title">Amount</h5>
             <p class="card-text">Category: Clothing</p>
           </div>
         </div>
@@ -78,22 +74,13 @@
       <div class="col-md-4 item books">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Novel</h5>
+            <h5 class="card-title">Units</h5>
             <p class="card-text">Category: Books</p>
           </div>
         </div>
       </div>
-     
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <p>RENT COLLECTION</p>
- 
-  
-
+     <b><p>RENT COLLECTION</p></b> 
+        
   <table class="table">
     <thead>
       <tr>  
@@ -177,11 +164,14 @@
         <td>@mdo</td>
       
       </tr>
-
-
-
     </tbody>
   </table>
+
+  </div>
+      </div>
+    </div>
+  </div>
+
   
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -219,5 +209,8 @@
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
   </script>
+
+<script src="main.js"></script>
+
 </body>
 </html>

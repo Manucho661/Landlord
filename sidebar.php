@@ -1,23 +1,25 @@
-
- <!-- Sidebar -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  
+<!-- Sidebar -->
 <div id="sidebar"  class="sidebar collapsed d-flex flex-column">
-  <a href="#dashboard" onclick="toggleItems()">
-    <i class="fas fa-plus-circle"></i> <!-- Add Icon -->
-      Dashboard
-  </a>
-  <!-- Hidden items -->
-  <div id="items" class="hidden-items">
-    <ul>
-        <a href=""><li>Property</li></a>
-        <a href=""><li>Tenants</li></a>
-        <a href=""><li>Rent Collection</li></a>
-       <a><li>Item 1</li></a>
-    </ul>
-  </div>
-    <a href="#profile">Profile</a>
-    <a href="#settings"> <i class="fas fa-cogs"></i> Settings</a>
-    <a href="#help">Help</a>
+        <a href="index.php" onclick="toggleItems()">
+        <i class="fas fa-tachometer-alt"></i> DASHBOARD </a><br>
+        <a href="property.php"><i class="fas fa-building"></i> PROPERTY</a><br>
+        <a href="tenant.php"><i class="fas fa-users"></i> TENANTS</a><br>
+        <a href="rent.php"><i class="fas fa-receipt"></i> RENT</a><br>
+        <a href="settings.php"> <i class="fas fa-cogs"></i> SETTINGS</a><br>
+        <a href="help.php"><i class="fas fa-question-circle"></i>HELP </a><br>
 </div>
+</body>
+</html>
 
 
  

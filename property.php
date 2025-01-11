@@ -25,13 +25,11 @@
         }
         .summaryItem{
             font-family: 'Playfair Display', serif; /* Elegant for creative projects */
-font-size: 25px;
-font-weight: bold;
-
-font-weight: 400; /* Lighter weight for a faint look */
-letter-spacing: 1px; /* Slight spacing for an airy feel */
-color:grey;
-
+            font-size: 25px;
+            font-weight: bold;
+             font-weight: 400; /* Lighter weight for a faint look */
+             letter-spacing: 1px; /* Slight spacing for an airy feel */
+             color:grey;
         }
     </style>
 </head>
@@ -52,7 +50,7 @@ color:grey;
         <div class="row mb-3">
             <div class="col-3 bg-white rounded">
                 <div class="summaryItem">PROPERTY</div>
-                <div>CROWN z</div>
+                <div>CROWN Z</div>
 
             </div>
 
@@ -83,10 +81,10 @@ color:grey;
         <div class="row propNav ">
             
             <div class="col-md-2 fw-semibold"><a href="property.php">Summary</a></div>
-            <div class="col-md-2 fw-semibold"><a href="occup.php">Occupancy</a>  </div>
+            <div class="col-md-2 fw-semibold"><a href="occup.php">Occupancy</a> </div>
             <div class="col-md-2 fw-semibold"> <a href="">Units</a> </div>
-            <div class="col-md-2 fw-semibold"> <a href="rent.php"> Rent</a>  </div>
-            <div class="col-md-2 fw-semibold"> <a href="financial.php">Financials</a>  </div>
+            <div class="col-md-2 fw-semibold"> <a href="rent.php"> Rent</a> </div>
+            <div class="col-md-2 fw-semibold"> <a href="financial.php">Financials</a> </div>
             <div class="col-md-2 fw-semibold"> <a href="communications/announcements.php">Communications</a>  </div>
             <hr>
 
