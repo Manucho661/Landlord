@@ -164,17 +164,17 @@ color: #00192D;
         <div class="occupancy-summary mt-5">
             
         <div class="row mb-3">
-            <div class="col-3 rounded" style="background:#FFC107">
+            <div class="col-3 rounded" style="background:#FFC107; ">
                 <div class="summaryItemOne">TOTAL UNITS</div>
                 <hr>
-                <div class="text-white" > <b>50 UNITS</b>  </div>
+                <div class="text-white"><b>50 UNITS</b></div>
 
             </div>
 
             <div class="col-3 rounded"  style="background:#FFC107" >
                 <div class="summaryItemOne rounded" >TENANTS</div>
                 <hr>
-                <div class="text-white"> <b>40 PERSONS </b>     
+                <div class="text-white"> <b>40 PERSONS</b>     
                 </div>
 
             </div>
@@ -187,7 +187,7 @@ color: #00192D;
             </div>
 
             <div class="col-2 rounded"  style="background:#FFC107" >
-                <div class="summaryItemOne">Units</div>
+                <div class="summaryItemOne">UNITS</div>
                 <hr>
                 <div class="text-white" >  <b>123 UNITS</b> </div>
 
