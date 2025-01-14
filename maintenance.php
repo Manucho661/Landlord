@@ -8,15 +8,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
+<?php include 'topbar.php'?>
+<?php include 'sidebar.php'?>
 
- 
+<div id="content" >
+<?php include 'MenuIcon.php'?>
+
     <!-- Maintenance Requests Table -->
     <div class="card mt-4">
       <div class="card-header bg-success text-white">
@@ -108,6 +105,9 @@
       </div>
     </div>
   </div>
+</div>
+
+<script src="main.js"></script>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
