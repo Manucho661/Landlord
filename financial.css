@@ -1,0 +1,58 @@
+
+/* Hide the default checkbox */
+.round-checkbox {
+    display: none;
+  }
+
+  /* Create a custom checkbox */
+  .round-checkbox-label {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  /* Add a checkmark when checked */
+  .round-checkbox:checked + .round-checkbox-label::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 13px;
+    height: 13px;
+    background-color: #007bff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+  }
+
+  /* Hover effect */
+  .round-checkbox-label:hover {
+    border-color: #0056b3;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+

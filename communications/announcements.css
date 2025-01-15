@@ -1,0 +1,60 @@
+body{
+    
+}
+
+.propName{
+    /* font-size: 25px; 
+    /* position: absolute; */
+    font-family: 'Playfair Display', serif; /* Elegant for creative projects */
+    /* font-size: 25%; */
+    font-weight: bold;
+    
+    font-weight: 400px; /* Lighter weight for a faint look */
+    letter-spacing: 1px; /* Slight spacing for an airy feel */
+    color:grey; 
+
+
+    }
+    
+.secondRow{
+    background: #00192D;
+}
+.row a{
+    color:#FFC107;
+}
+.custom-button{
+    border: none;
+    
+    justify-content: end;
+    
+    
+    
+    /* width: auto; Ensures the button width is determined by its content */
+
+}
+button{
+    
+    border-radius: 10%;
+    background-color:#FFC107;
+    border-radius: 10px;
+    border: #FFC107;
+    color: #00192D;
+    font-weight: bold; 
+
+}
+th {
+    /* font-weight: 400; Reduce the font weight to normal */
+    font-size: 12px;
+    
+}
+.announcement-section{
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 2%;
+    margin-top: 2px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Horizontal offset, Vertical offset, Blur radius, Shadow color */
+
+}
+td{
+    font-size: 80%;
+}
+

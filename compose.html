@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>Compose Email</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 600px;
+    }
+
+    .compose-email {
+      display:flex;
+      justify-content: center
+      
+      
+      ;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="email"], input[type="text"], textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical; /* Allow vertical resizing */
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button.send-button {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    button.send-button:hover {
+      background-color: #0056b3;
+    }
+
+    button.cancel-button {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    button.cancel-button:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Compose Email</h1>
+  <form class="compose-email" id="compose-email-form">
+    <div class="form-group">
+      <label for="recipient-email"><i class="fas fa-envelope"></i> Recipient Email:</label>
+      <input type="email" id="recipient-email" name="recipient-email" placeholder="Enter recipient's email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email-subject"><i class="fas fa-heading"></i> Subject:</label>
+      <input type="text" id="email-subject" name="email-subject" placeholder="Enter email subject" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email-body"><i class="fas fa-comment"></i> Message:</label>
+      <textarea id="email-body" name="email-body" rows="6" placeholder="Compose your message..." required></textarea>
+    </div>
+
+    <div class="form-actions">
+      <button type="reset" class="cancel-button">Cancel</button>
+      <button type="submit" class="send-button">Send</button>
+    </div>
+  </form>
+
+  <script>
+    // JavaScript for handling form submission
+    document.getElementById('compose-email-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Get the input values
+      const recipientEmail = document.getElementById('recipient-email').value;
+      const emailSubject = document.getElementById('email-subject').value;
+      const emailBody = document.getElementById('email-body').value;
+
+      // Display the input values (You can replace this with actual email-sending logic)
+      console.log('Recipient:', recipientEmail);
+      console.log('Subject:', emailSubject);
+      console.log('Message:', emailBody);
+
+      // Alert the user (Optional)
+      alert('Email sent successfully!');
+
+      // Clear the form
+      this.reset();
+    });
+  </script>
+</body>
+</html>
