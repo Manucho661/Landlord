@@ -19,7 +19,7 @@
     }
 
     header {
-      background-color: #007bff;
+      background-color: #00192D;
       color: white;
       padding: 20px;
       text-align: center;
@@ -49,8 +49,8 @@
     }
 
     .table-header {
-      background-color: #007bff;
-      color: white;
+      background-color: #00192D;
+      color: #FFC107;
     }
 
     .list-group-item {
@@ -70,19 +70,29 @@
       background:#00192D;
       width: 120px;
       height: 50px;
+      justify-content: end;
+      color: #FFC107;
     }
-
+#yolo{
+  background: #00192D;
+  color: #FFC107;
+}
   </style>
 </head>
 <body>
 
+<?php include 'topbar.php'?>
+<?php include 'sidebar.php'?>
+
+<div id="content">
+<?php include 'MenuIcon.php'?>
     <div class="row">
   <div class="col-sm-6 mb-3 mb-sm-0">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Lease Summary</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn" id="yolo">Go somewhere</a>
       </div>
     </div>
   </div>
@@ -91,20 +101,21 @@
       <div class="card-body">
         <h5 class="card-title">Balance Tracking</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn" id="yolo">Go somewhere</a>
       </div>
     </div>
   </div>
 </div>
 
-<button class="btn btn-dark mt-2"id="yele" data-bs-toggle="modal" data-bs-target="#leaseModal">AddNewLease</button> <br><br> 
+
 
     <!-- Main Content Section -->
     <div class="content">
       <!-- Lease Agreements Table -->
       <section class="mb-5">
-        <h2 class="mb-3">Lease Agreements</h2>
+        <h2 class="mb-3" style="color: grey;">Lease Agreements</h2>
         <div class="table-responsive">
+        <button class="btn  mt-2"id="yele" data-bs-toggle="modal" data-bs-target="#leaseModal">AddNewLease</button> <br><br> 
           <table class="table table-hover">
             <thead class="table-header">
               <tr>
@@ -124,7 +135,7 @@
                 <td>2023-01-01</td>
                 <td>2024-01-01</td>
                 <td>2024-01-01</td>
-                <td><span class="badge bg-success">Active</span></td>
+                <td><span class="badge" id="yolo">Active</span></td>
               </tr>
               <tr>
                 <td>Lakeview Villa</td>
@@ -141,11 +152,11 @@
 
       <!-- Renewal Alerts -->
       <section>
-        <h2 class="mb-3">Renewal Alerts</h2>
+        <h2 class="mb-3" style="color: grey;">Renewal Alerts</h2>
         <ul class="list-group">
           <li class="list-group-item d-flex justify-content-between align-items-center">
             Greenwood Apartments lease is expiring on 2024-01-01.
-            <button class="btn btn-success btn-sm">Renew</button>
+            <button class="btn btn-sm" id="yolo">Renew</button>
           </li>
           <li class="list-group-item d-flex justify-content-between align-items-center">
             Lakeview Villa lease has expired on 2023-05-15.
@@ -191,6 +202,9 @@
       </div>
     </div>
   </div>
+
+  
+<script src="main.js"></script>
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

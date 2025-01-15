@@ -6,16 +6,14 @@
   <title>Lease Management</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
+<?php include 'topbar.php'?>
+<?php include 'sidebar.php'?>
+ 
+<div id="content">
+<?php include 'MenuIcon.php'?>
 
   <div class="container mt-4">
     <h1 class="text-left">Lease Management</h1>
@@ -113,6 +111,8 @@
   </div>
 
   <!-- Bootstrap JS -->
+  
+<script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
