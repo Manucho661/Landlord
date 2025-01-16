@@ -959,7 +959,7 @@
  
                  
             <!--begin::Row-->
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-12">
                 <div class="card mb-4">
                   <div class="card-header" style="background-color:#00192D; color: white;" >
@@ -989,11 +989,11 @@
                         <i class="bi bi-x-lg"></i>
                       </button>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- /.card-header -->
-                  <div class="card-body">
+                  <!-- <div class="card-body"> -->
                     <!--begin::Row-->
-                    <table id="myTable" class="display" style="">
+                    <!-- <table id="myTable" class="display" style="">
                       <thead>
                           <tr>
                               <th>Property</th>
@@ -1020,20 +1020,20 @@
                               <td>KSH 100, 200</td>
                               <td>100</td>
                              
-                          </tr>
-                          <!-- Add more rows as needed -->
+                          </tr> -->
+                          <!-- Add more rows as needed
                       </tbody>
-                  </table>
+                  </table> -->
 
 
 
                 
                     <!--end::Row-->
-                  </div>
+                  <!-- </div> -->
                   <!-- ./card-body -->
-                  <div class="card-footer">
+                  <!-- <div class="card-footer"> -->
                     <!--begin::Row-->
-                    <div class="row">
+                    <!-- <div class="row">
                       <div class="col-md-6 col-6">
                         <div class="text-center border-end">
                           <span class="text-success">
@@ -1043,53 +1043,69 @@
                           <span class="text-uppercase">TOTAL RENT</span>
                         </div>
                       </div>
-                      <!-- /.col -->
-                      <div class="col-md-6 col-6">
+                       /.col -->
+                      <!-- <div class="col-md-6 col-6">
                         <div class="text-center border-end">
                           <span class="text-info"> <i class="bi bi-caret-left-fill"></i> 20% </span>
                           <h5 class="fw-bold mb-0">KSH 10,390.90</h5>
                           <span class="text-uppercase">TOTAL PENDING</span>
                         </div>
-                      </div>
+                      </div> --> 
                       <!-- /.col -->
                       
                     <!--end::Row-->
-                  </div>
+                  <!-- </div> -->
                   <!-- /.card-footer -->
-                </div>
+                <!-- </div> -->
                 <!-- /.card -->
-              </div>
+              <!-- </div> -->
               <!-- /.col -->
-            </div>
+            <!-- </div> -->
             <!--end::Row-->
             <!--begin::Row-->
-            <div class="row">
-              <!-- Start col -->
+            <div class="row g-4 mb-8">
+              <!-- First Card -->
               <div class="col-md-6">
-                <!--begin::Row-->
-                <div class="row g-4 mb-4">
-                  <div class="col-md-12">
-                    <!-- DIRECT CHAT -->
-                     <div class="card">
-                      <div class="card-header" style="background-color:#FFC107; /* RGB */
-;">
-                        <h3 class="card-title">RentalTrends</h3>
-                      </div>
-
-                      <div class="card-body">
-                        <canvas id="rentalTrends" width="400" height="300"></canvas>
-                      </div>
-                     </div>
-
-                 
-                    <!-- /.direct-chat -->
+                <div class="card">
+                  <div class="card-header" style="background-color:#FFC107;">
+                    <h3 class="card-title">RentalTrends</h3>
                   </div>
-                  <!-- /.col -->
-                  
-                  <!-- /.col -->
-                  
-                  <!-- /.col -->
+                  <div class="card-body">
+                    <canvas id="rentalTrends" width="400" height="300"></canvas>
+                  </div>
                 </div>
+              </div>
+              <!-- /.col-md-6 -->
+            
+              <!-- Second Card -->
+              <div class="col-md-6" >
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">OCCUPANCY STATUS</h3>
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse">
+                        <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
+                        <i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
+                      </button>
+                      <button type="button" class="btn btn-tool" data-lte-toggle="card-remove">
+                        <i class="bi bi-x-lg"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12">
+                        <div id="pie-chart"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.col-md-6 -->
+            </div>
+            <!-- /.row -->
+            
+                  <!--end::Row-->
                 <!--end::Row-->
                 <!--begin::Latest Order Widget-->
                 <!-- <div class="card">
