@@ -55,7 +55,7 @@ body{
 /* Content styles */
 
 #content{
-    margin-left: 0px; /* Space for sidebar */
+    margin-left: 255px; /* Space for sidebar */
     padding: 20px;
     flex-grow: 1;
     transition: margin-left 0.3s ease;

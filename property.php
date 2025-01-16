@@ -14,16 +14,7 @@
         a{
             text-decoration: none;
         }
-        .row .col-3{
-            /* background-color:white; */
-    
-            
-        }
-
-        .card{
-            border: solid 1px  #FFC107 ;
-            background-color:white;
-        }
+        
         body{
             
             background-color: rgba(128, 128, 128, 0.1);
@@ -65,46 +56,50 @@ color: #00192D;
 
     <div class="container-fluid">
         <div class="row mb-3">
-            <div class="col-3 rounded">
-
-            <div class="card">    
-                            <div class="card-body">
-                                <h5 class="card-title summaryItem">Property</h5>
-                                <div class="card-text" > CROWN Z  </div>
-                            </div>
+            <div class="col-3">
+                <div class="card text-center h-100 " style="border:solid 1px  #FFC107; "  >
+                        <div class="card-body">
+                            <h5 class="card-title summaryItem ">PROPERTY</h5>
+                                <p class="card-text fs-6">Crown Z </p>
+                        </div>
                     </div>
+
             </div>
 
             <div class="col-3 rounded">
-                    <div class="card">    
-                            <div class="card-body">
-                                <h5 class="card-title summaryItem">Address/Location</h5>
-                                <div class="card-text" > John Doe
+
+                <div class="card text-center h-100 " style="border:solid 1px  #FFC107; "  >
+                    <div class="card-body ">
+                        <h5 class="card-title summaryItem ">Address/location</h5>
+                            <p class="card-text fs-6">John Doe
                                 123 Maple Street
                                 Springfield, IL 62704
-                                USA  </div>
-                            </div>
+                                USA  </p>
                     </div>
+                </div>
+
+
+
             </div>
 
             <div class="col-3 rounded">
-
-                <div class="card">          
-                            <div class="card-body">
-                                <h5 class="card-title summaryItem">Manager</h5>
-                                <div class="card-text" > Kelvin Wambui </div>
-                            </div>
+            <div class="card text-center h-100 " style="border:solid 1px  #FFC107; "  >
+                    <div class="card-body">
+                        <h5 class="card-title summaryItem ">Manager</h5>
+                            <p class="card-text fs-6">KELVIN MBUGUA </p>
                     </div>
-               </div>
+                </div> 
+            </div>
 
-            <div class="col-3">
-            <div class="card">          
-                            <div class="card-body">
-                                <h5 class="card-title summaryItem">UNITS</h5>
-                                <div class="card-text" > 23 </div>
-                            </div>
+            
+            <div class="col-3 rounded">
+            <div class="card text-center h-100 " style="border:solid 1px  #FFC107; "  >
+                    <div class="card-body">
+                        <h5 class="card-title summaryItem ">Manager</h5>
+                            <p class="card-text fs-6">KELVIN MBUGUA </p>
                     </div>
-               </div>
+                </div> 
+        
 
             </div>
 
@@ -184,33 +179,52 @@ color: #00192D;
         <div class="occupancy-summary mt-5">
             
         <div class="row mb-3">
-            <div class="col-3 rounded" style="background:#FFC107; ">
-                <div class="summaryItemOne">TOTAL UNITS</div>
-                <hr>
-                <div class="text-white"><b>50 UNITS</b></div>
+            <div class="col-3 rounded" >
+               
+                <div class="card text-center h-100 " style="border:solid 1px  #FFC107; "  >
+                    <div class="card-body">
+                        <h5 class="card-title summaryItem ">TOTAL UNITS</h5>
+                            <p class="card-text fs-6">50 UNITS </p>
+                    </div>
+                </div> 
+
 
             </div>
 
-            <div class="col-3 rounded"  style="background:#FFC107" >
-                <div class="summaryItemOne rounded" >TENANTS</div>
-                <hr>
-                <div class="text-white"> <b>40 PERSONS</b>     
-                </div>
 
+
+
+
+
+            <div class="col-3 rounded"  >
+
+
+            <div class="card text-center h-100 " style="border:solid 1px  #FFC107; "  >
+                    <div class="card-body">
+                        <h5 class="card-title summaryItem ">TENANTS</h5>
+                            <p class="card-text fs-6">50 PERSONS </p>
+                    </div>
+                </div> 
+               
             </div>
 
-            <div class="col-3 rounded"  style="background:#FFC107" >
-                <div class="summaryItemOne">VACANT UNITS</div>
-                <hr>
-                <div class="text-white" > <b> 10 UNITS</b>   </div>
-
+            <div class="col-3 rounded" >
+            <div class="card text-center h-100 " style="border:solid 1px  #FFC107; "  >
+                    <div class="card-body">
+                        <h5 class="card-title summaryItem ">VACANT UNITS</h5>
+                            <p class="card-text fs-6">50 UNITS </p>
+                    </div>
+                </div> 
             </div>
 
-            <div class="col-2 rounded"  style="background:#FFC107" >
-                <div class="summaryItemOne">UNITS</div>
-                <hr>
-                <div class="text-white" >  <b>123 UNITS</b> </div>
-
+            <div class="col-3 rounded"  >
+            <div class="card text-center h-100 " style="border:solid 1px  #FFC107; "  >
+                    <div class="card-body">
+                        <h5 class="card-title summaryItem ">TOTAL UNITS</h5>
+                            <p class="card-text fs-6">50 UNITS </p>
+                    </div>
+                </div> 
+            </div>
             </div>
 
         </div>
