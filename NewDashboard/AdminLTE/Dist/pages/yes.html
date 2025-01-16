@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rental Collections</title>
+  <!-- DataTable CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+</head>
+<body>
+  <!-- Begin::Row -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-4">
+        <div class="card-header">
+          <h5 class="card-title">Rental Collections</h5>
+          <div class="card-tools">
+            <!-- Your card tools and dropdown -->
+          </div>
+        </div>
+
+        <div class="card-body">
+          <!-- Table for Rental Collections -->
+          <table id="myTable" class="display">
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Type</th>
+                <th>Total Paid</th>
+                <th>Pending</th>
+                <th>No of Tenants</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Manucho Apartments</td>
+                <td>BEDSITTER</td>
+                <td>KSH 200,000</td>
+                <td>KSH 100,100</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>Ebenezer Apartments</td>
+                <td>1 BEDROOM</td>
+                <td>KSH 200,000</td>
+                <td>KSH 100,200</td>
+                <td>100</td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End::Row -->
+
+  <!-- jQuery (necessary for DataTables) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- DataTable JS -->
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  
+  <!-- Initialize DataTable -->
+  <script>
+    $(document).ready(function() {
+      $('#myTable').DataTable({
+        paging: true,
+        searching: true,
+        ordering: true,
+        info: true,
+        lengthMenu: [5, 10, 25],
+      });
+    });
+  </script>
+</body>
+</html>
