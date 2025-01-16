@@ -16,8 +16,13 @@
         }
         .row .col-3{
             /* background-color:white; */
-            margin-right:1%;
+    
             
+        }
+
+        .card{
+            border: solid 1px  #FFC107 ;
+            background-color:white;
         }
         body{
             
@@ -60,31 +65,46 @@ color: #00192D;
 
     <div class="container-fluid">
         <div class="row mb-3">
-            <div class="col-3 bg-white rounded">
-                <div class="summaryItem">PROPERTY</div>
-                <div>CROWN Z</div>
+            <div class="col-3 rounded">
 
+            <div class="card">    
+                            <div class="card-body">
+                                <h5 class="card-title summaryItem">Property</h5>
+                                <div class="card-text" > CROWN Z  </div>
+                            </div>
+                    </div>
             </div>
 
-            <div class="col-3 bg-white rounded">
-                <div class="summaryItem" >Address/location</div>
-                <div> John Doe
+            <div class="col-3 rounded">
+                    <div class="card">    
+                            <div class="card-body">
+                                <h5 class="card-title summaryItem">Address/Location</h5>
+                                <div class="card-text" > John Doe
                                 123 Maple Street
                                 Springfield, IL 62704
-                                USA         
-                </div>
-
+                                USA  </div>
+                            </div>
+                    </div>
             </div>
 
-            <div class="col-3 bg-white rounded">
-                <div class="summaryItem">Manager</div>
-                <div>Kevin Mbugua</div>
+            <div class="col-3 rounded">
 
-            </div>
+                <div class="card">          
+                            <div class="card-body">
+                                <h5 class="card-title summaryItem">Manager</h5>
+                                <div class="card-text" > Kelvin Wambui </div>
+                            </div>
+                    </div>
+               </div>
 
-            <div class="col-2 bg-white">
-                <div class="summaryItem">Units</div>
-                <div>123</div>
+            <div class="col-3">
+            <div class="card">          
+                            <div class="card-body">
+                                <h5 class="card-title summaryItem">UNITS</h5>
+                                <div class="card-text" > 23 </div>
+                            </div>
+                    </div>
+               </div>
 
             </div>
 
