@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css"> 
     <link rel="stylesheet" href="index.css"> 
+    <!-- <link rel="stylesheet" href="Property.css">  -->
     <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -34,13 +35,13 @@
             margin: 25px 0;
         }
         .filters button {
-            margin-right:px;
+            /* margin-right:px; */
             padding: 5px 10px;
             border: 1px solid  #00192D;
             background: white;
             cursor: pointer;
         }
-        span {
+        spani {
     background-color: #FFC107;
     padding: 5px;
     border-radius:10px;
@@ -50,9 +51,18 @@
 <body>
 <?php include 'topbar.php'?> 
 <?php include 'sidebar.php'?> 
+          
+
 <br>
+<div id="content">
+<?php include 'MenuIcon.php'?>
+
+</div>
 <!-- <p style>Tenant Screening Dashboard</p> -->
-<div class="card" style="margin-left: 18rem; margin-right: 2rem;">
+<div class="card" style="margin-left: 20rem; margin-right: 2rem;">
+
+
+
   <div class="card-body">
   <h2 class="text-center">Tenant Screening</h2>
     
@@ -65,13 +75,13 @@
     </div>
   
 
-    <h2 > <span>APPLICANT LIST</span></h2>
+    <h2 > <spani>APPLICANT LIST</spani></h2>
     <table>
         <tr>
-            <th><span>Name</span></th>
-            <th><span>Date Applied</span></th>
-            <th><span>Status</span></th>
-            <th><span>Action</span></th>
+            <th><spani>Name</spani></th>
+            <th><spani>Date Applied</spani></th>
+            <th><spani>Status</spani></th>
+            <th><spani>Action</spani></th>
         </tr>
         <tr>
             <td>John Doe</td>
@@ -131,5 +141,9 @@
     </table>
   </div>
 </div>
+</div>
+
+
+<script src="main.js"></script>
 </body>
 </html>
