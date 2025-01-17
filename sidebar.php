@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  
+
 <!-- Sidebar -->
 <div id="sidebar"  class="sidebar expanded d-flex flex-column">
         <a href="index.php" onclick="toggleItems()">
@@ -19,8 +10,7 @@
         <a href="help.php"><i class="fas fa-question-circle"></i>HELP </a><br><br><br><br><br><br><br><br><br>
         <a href="tenant.php"><i class="fas fa-sign-out-alt"></i> Logout</a><br>
 </div>
-</body>
-</html>
+
 
 
  
