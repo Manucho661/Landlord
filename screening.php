@@ -83,30 +83,12 @@
             <td>Jane Smith</td>
             <td>6-06-2025</td>
             <td><span class="badge bg-danger">!Pending</span></td>
-            <td><a href="#">[View]</a></td>
-        </tr>
-        <tr>
-            <td>Jane Smith</td>
-            <td>6-06-2025</td>
-            <td><span class="badge bg-danger">!Pending</span></td>
-            <td><a href="#">[View]</a></td>
-        </tr>
-        <tr>
-            <td>John Doe</td>
-            <td>10-01-2025</td>
-            <td><span class="badge bg-success">Approved</span></td>
             <td><a href="application.php">[View]</a></td>
         </tr>
         <tr>
             <td>Jane Smith</td>
             <td>6-06-2025</td>
             <td><span class="badge bg-danger">!Pending</span></td>
-            <td><a href="#">[View]</a></td>
-        </tr>
-        <tr>
-            <td>John Doe</td>
-            <td>10-01-2025</td>
-            <td><span class="badge bg-success">Approved</span></td>
             <td><a href="application.php">[View]</a></td>
         </tr>
         <tr>
@@ -119,13 +101,31 @@
             <td>Jane Smith</td>
             <td>6-06-2025</td>
             <td><span class="badge bg-danger">!Pending</span></td>
-            <td><a href="#">[View]</a></td>
+            <td><a href="application.php">[View]</a></td>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>10-01-2025</td>
+            <td><span class="badge bg-success">Approved</span></td>
+            <td><a href="application.php">[View]</a></td>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>10-01-2025</td>
+            <td><span class="badge bg-success">Approved</span></td>
+            <td><a href="application.php">[View]</a></td>
         </tr>
         <tr>
             <td>Jane Smith</td>
             <td>6-06-2025</td>
             <td><span class="badge bg-danger">!Pending</span></td>
-            <td><a href="#">[View]</a></td>
+            <td><a href="application.php">[View]</a></td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>6-06-2025</td>
+            <td><span class="badge bg-danger">!Pending</span></td>
+            <td><a href="application.php">[View]</a></td>
         </tr>
 
     </table>
