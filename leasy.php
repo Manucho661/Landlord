@@ -6,6 +6,12 @@
   <title>Lease Management System</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <link rel="stylesheet" href="main.css"> 
+     <link rel="stylesheet" href="index.css"> 
   <style>
     body, html {
       height: 100%;
@@ -33,9 +39,12 @@
 
     .content {
       flex-grow: 1;
-      padding: 20px;
+      /* padding: 30rem; */
       overflow-y: auto;
       background-color: #f3f4f6;
+      margin-left: 18rem;  /* Visible margin on the left side */
+      margin-right: 2rem; /* Visible margin on the right side */
+     
     }
 
     .content h2 {
@@ -66,92 +75,140 @@
       text-align: center;
       padding: 10px 0;
     }
-    #yele{
-      background:#00192D;
-      width: 120px;
-      height: 50px;
-      justify-content: end;
-      color: #FFC107;
-    }
+  
 #yolo{
   background: #00192D;
   color: #FFC107;
 }
+#example {
+      padding: 20px;
+      border-radius: 15px;              /* Rounds the corners */
+      background-color: #f0f0f0;       /* Light background color */
+      border: 2.5px solid rgb(225, 202, 47);        /* Initial border color (blue) */
+      transition: all 0.3s ease;        /* Smooth transition for color change */
+    }
+#example:hover {
+  border-color: #FFC107;        
+}
+
   </style>
+      <link rel="stylesheet" href="main.css">
+
 </head>
 <body>
 
-<?php include 'topbar.php'?>
-<?php include 'sidebar.php'?>
+ <?php include 'topbar.php'?> 
 
-<div id="content">
+ <?php include 'sidebar.php'?> 
+ <div id="content">
 <?php include 'MenuIcon.php'?>
-    <div class="row">
+</div>
+
+<br>
+
+<div class="content">
+
+  <div class="row">
   <div class="col-sm-6 mb-3 mb-sm-0">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Lease Summary</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn" id="yolo">Go somewhere</a>
+        <h5 class="card-title">NO OF LEASE</h5>
+        <p class="card-text">50</p>
+        <!-- <a href="#" class="btn" id="yolo">Go somewhere</a> -->
       </div>
     </div>
   </div>
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Balance Tracking</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn" id="yolo">Go somewhere</a>
+        <h5 class="card-title">TOTAL RENT</h5>
+        <p class="card-text">KSH 40,000</p>
+        <!-- <a href="#" class="btn" id="yolo">Go somewhere</a> -->
       </div>
     </div>
   </div>
 </div>
 
+<hr>
+ <!-- Beginning Property row -->
 
-
-    <!-- Main Content Section -->
-    <div class="content">
-      <!-- Lease Agreements Table -->
-      <section class="mb-5">
-        <h2 class="mb-3" style="color: grey;">Lease Agreements</h2>
-        <div class="table-responsive">
-        <button class="btn  mt-2"id="yele" data-bs-toggle="modal" data-bs-target="#leaseModal">AddNewLease</button> <br><br> 
-          <table class="table table-hover">
-            <thead class="table-header">
-              <tr>
-                <th>Property Name</th>
-                <th>Lessee Name</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-                <th>Rent</th>
-                <th>Status</th>
-
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Greenwood Apartments</td>
-                <td>John Doe</td>
-                <td>2023-01-01</td>
-                <td>2024-01-01</td>
-                <td>2024-01-01</td>
-                <td><span class="badge" id="yolo">Active</span></td>
-              </tr>
-              <tr>
-                <td>Lakeview Villa</td>
-                <td>Jane Smith</td>
-                <td>2022-05-15</td>
-                <td>2023-05-15</td>
-                <td>2024-01-01</td>
-                <td><span class="badge bg-danger">Expired</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
+ <div class="col-md-12">
+                <div class="card mb-4">
+                  <div class="card-header" style="background-color:#00192D; color: white;" >
+                  <button class="btn  mt-0" id="example" data-bs-toggle="modal" data-bs-target="#leaseModal" style="">
+                  <i class="fas fa-plus"></i> 
+                    Add Lease</button>
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse">
+                        <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
+                        <i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
+                      </button>
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="btn btn-tool dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                        >
+                          <i class="bi bi-wrench"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" role="menu">
+                          <a href="#" class="dropdown-item">Action</a>
+                          <a href="#" class="dropdown-item">Another action</a>
+                          <a href="#" class="dropdown-item"> Something else here </a>
+                          <a class="dropdown-divider"></a>
+                          <a href="#" class="dropdown-item">Separated link</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-tool" data-lte-toggle="card-remove">
+                        <i class="bi bi-x-lg"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <!--begin::Row-->
+                    <table id="myTableOne" class="display" style="">
+                      <thead>
+                        <tr>
+                          <th>Property Name</th>
+                          <th>Lesse Name</th>
+                          <th>Start Date</th>
+                          <th>End  Date</th>
+                          <th>Rent</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Manucho Apartments</td>
+                          <td>Matthew</td>
+                          <td>Kisumu</td>
+                          <td>10-10-2024</td>
+                          <td>60,000</td>
+                          <td><span class="badge" id="yolo">Active</span></td>
+                        </tr>
+                        <tr>
+                          <td>Ethical Apartments</td>
+                          <td>Mark</td>
+                          <td>Rongai</td>
+                          <td>11-10-2024</td>
+                          <td>65,000</td>
+                          <td><span class="badge" id="yolo">!inactive</span></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                      </tbody>
+            
+                  </table>
+                    <!--end::Row-->
+                  </div>
+</div>
+<hr>
+   
       <!-- Renewal Alerts -->
-      <section>
+
+      <div class="card">
+  <div class="card-body">
+  <section>
         <h2 class="mb-3" style="color: grey;">Renewal Alerts</h2>
         <ul class="list-group">
           <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -164,7 +221,9 @@
           </li>
         </ul>
       </section>
-    </div>
+  
+  </div>
+</div>
 
   <!-- Lease Modal -->
   <div class="modal fade" id="leaseModal" tabindex="-1" aria-labelledby="leaseModalLabel" aria-hidden="true">
@@ -205,6 +264,22 @@
 
   
 <script src="main.js"></script>
+
+<script>
+      // Initialize DataTable
+      $(document).ready(function () {
+          $('#myTable').DataTable();
+      });
+      $(document).ready(function () {
+          $('#myTableOne').DataTable();
+      });
+      $(document).ready(function () {
+          $('#myTableThree').DataTable();
+      });
+      $(document).ready(function () {
+          $('#myTableFour').DataTable();
+      });
+   </script>
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
