@@ -50,7 +50,6 @@
               </b>
               <p>
                 Lorem, ipsumumqbus ducimus modi. Sit, temporibus maiores a quibusdam qui quas impedit perspiciatis debitis!
-
               </p>
             </div>
             <div class="col-lg-4">

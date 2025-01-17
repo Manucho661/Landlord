@@ -78,6 +78,8 @@
   color: #FFC107;
 }
   </style>
+      <link rel="stylesheet" href="main.css">
+
 </head>
 <body>
 
