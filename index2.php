@@ -81,7 +81,7 @@
             <div class="container-fluid">
               <!--begin::Row-->
               <div class="row">
-                <div class="col-sm-6"><h3 class="mb-0">Dashboard v2</h3></div>
+                <div class="col-sm-6"><h3 class="mb-0"></h3></div>
                 <div class="col-sm-6">
                   <ol class="breadcrumb float-sm-end">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -168,7 +168,7 @@
               <div class="col-md-12">
                 <div class="card mb-4">
                   <div class="card-header" style="background-color:#00192D; color: white;" >
-                    <h5 class="card-title bg-warning">Properties</h5>
+                    <h5 class="card-title bg-warning" style="padding:0.5rem; border-radius: 10px;">Properties</h5>
                     <div class="card-tools">
                       <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse">
                         <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
@@ -249,7 +249,7 @@
                 <div class="col-md-12">
                   <div class="card mb-4">
                     <div class="card-header" style="background-color:#00192D; color: white;" >
-                      <h5 class="card-title bg-warning" >Rental Collections</h5>
+                      <h5 class="card-title bg-warning" style="padding:0.5rem; border-radius: 10px;" >Rental Collections</h5>
                       <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse">
                           <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
@@ -308,7 +308,7 @@
                                 <td>100</td>
                               
                             </tr>
-                            Add more rows as needed
+                            <!-- Add more rows as needed -->
                         </tbody>
                     </table> 
                     </div>
@@ -415,7 +415,7 @@
                 <div class="col-md-12">
                   <div class="card mb-4">
                     <div class="card-header" style="background-color:#00192D; color: white;">
-                      <h5 class="card-title bg-warning" >Maintanance Requests</h5>
+                      <h5 class="card-title bg-warning" style="padding:0.5rem; border-radius: 10px;">Maintenance Requests</h5>
                       <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse">
                           <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
@@ -503,7 +503,7 @@
                   <div class="col-md-12">
                     <div class="card mb-4">
                       <div class="card-header" style="background-color:#00192D; color: white;" >
-                        <h5 class="card-title bg-warning" >Communication</h5>
+                        <h5 class="card-title bg-warning" style="padding:0.5rem; border-radius: 10px;" >Communication</h5>
                         <div class="card-tools">
                           <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse">
                             <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
