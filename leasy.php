@@ -92,6 +92,8 @@
 }
 
   </style>
+      <link rel="stylesheet" href="main.css">
+
 </head>
 <body>
 
