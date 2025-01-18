@@ -19,7 +19,7 @@
         <a href="leasy.php"><i class="fas fa-users"></i> LEASE MANAGEMENT</a><br>
         <a href="settings.php"> <i class="fas fa-cogs"></i> SETTINGS</a><br>
         <a href="help.php"><i class="fas fa-question-circle"></i>HELP </a><br><br><br><br><br><br><br><br><br>
-        <a href="tenant.php"><i class="fas fa-sign-out-alt"></i> Logout</a><br>
+        <a href="Details.php"><i class="fas fa-sign-out-alt"></i> Logout</a><br>
 </div> 
 </body>
 <!-- Bootstrap JS and Popper.js -->
