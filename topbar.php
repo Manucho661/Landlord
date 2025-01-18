@@ -25,7 +25,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: #3498db; /* Blue background */
+      background-color: white; /* Blue background */
       padding: 10px 20px;
       color: white;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better visibility */
@@ -62,21 +62,48 @@
       font-size: 24px;
       font-weight: bold;
     }
+    .notification-container {
+    position: relative;
+}
+
+.icon {
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 50%;
+}
   </style>
   </head>
 <body>
 <header class="header">
     <!-- Site title or logo -->
     <div class="site-title">My Website</div>
-
+    <div class="notification-container">
+        <div class="icon">
+            🔔
+            <span class="badge" id="notification-count">3</span>
+        </div>
+    </div>
     <!-- Profile information -->
     <div class="profile-info">
-      <img src="https://via.placeholder.com/50" alt="Profile Image" class="profile-img">
+      <img src="./img" alt="Profile Image" class="profile-img">
       <div>
         
       </div>
     </div>
   </header>
   
+  
+
 </body>
 </html>

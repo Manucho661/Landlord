@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="main.css"> 
     <link rel="stylesheet" href="index.css"> 
@@ -13,6 +13,7 @@
         body {
             font-family: Arial, sans-serif;
         }
+
         h2 {
             color:  #00192D;
             display:center;
@@ -22,6 +23,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
+            overflow-x: auto;
         }
         th, td {
             border: 1px solid #00192D;
@@ -46,6 +48,7 @@
     padding: 5px;
     border-radius:10px;
 }
+        }
     </style>
 </head>
 <body>
@@ -60,9 +63,6 @@
 </div>
 <!-- <p style>Tenant Screening Dashboard</p> -->
 <div class="card" style="margin-left: 20rem; margin-right: 2rem;">
-
-
-
   <div class="card-body">
   <h2 class="text-center">Tenant Screening</h2>
     
