@@ -48,6 +48,11 @@ color: #00192D;
     border-color: #00192D;
     color:  #FFC107; /* White background */
         }
+
+        tr:hover {
+      background-color: gray;
+      cursor: pointer;
+    }
     </style>
 </head>
 <body>
@@ -102,7 +107,7 @@ color: #00192D;
                         <div class="card-body">
                             <table id="tenants"  class="table table-striped table-bordered">
                                 <thead>
-                                    <tr>
+                                    <tr  >
                                         <th scope="col">OCCUPIED</th>
                                             <th scope="col">NAME</th>
                                             <th scope="col">PHONE</th>
@@ -115,7 +120,7 @@ color: #00192D;
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr onclick="window.location.href='details.php'" >
                                         <th scope="row">1/7/11</th>
                                             <td>Kelvin Mbugua</td>
                                             <td>0757414722</td>
@@ -127,7 +132,7 @@ color: #00192D;
                                             <td> <button type="button" class="btn text-danger">REMOVE</button>
                                             </td>
                                     </tr>
-                                    <tr>
+                                    <tr onclick="window.location.href='details.php'">
                                     <th scope="row">2/7/11</th>
                                     <td>Jacob Wesonga</td>
                                     <td>0758322543</td>
