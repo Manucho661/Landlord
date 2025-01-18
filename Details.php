@@ -103,16 +103,29 @@ color: #00192D;
 
         <div class="row bg-light">
             <!-- Profile Picture -->
-            <div class="col-md-4">
-             <img class="mt-3" src="images/Doe.jpg" alt="Profile Picture"  width="100">
-            </div>
-            <!-- Profile Details -->
-            <div class="col-md-8">
-            <!-- <h2>Jane Doe</h2> -->
-            <p><strong>Occupation:</strong> Software Engineer</p>
-            <p><strong>Hobbies:</strong> Reading, Hiking, Photography</p>
-            <p><strong>About:</strong> Passionate about coding and building amazing web experiences!</p>
-             </div>
+
+            <div class="card" style="background-color:rgba(255, 223, 50, 0.1)
+;"> 
+                        
+
+                        <div class="card-body">
+                            <div class="row">
+                            <div class="col-md-4">
+                                    <img class="mt-3" src="images/Doe.jpg" alt="Profile Picture"  width="100">
+                                </div>
+                                <!-- Profile Details -->
+                                <div class="col-md-8">
+                                <!-- <h2>Jane Doe</h2> -->
+                                    <p><strong>Occupation:</strong> Teacher</p>
+                                    <p><strong>DATE OF BIRTH:</strong> 5-23-1995</p>
+                                    <p><strong>IDENTIFICATION NUMBER:</strong> 012020202</p>
+                                </div>
+                            </div>
+                                
+
+                        </div>
+
+           
         </div>
        
         
@@ -129,7 +142,7 @@ color: #00192D;
                     <div class="card">
                         <div class="card-header " style="background-color: #00192D; color:#FFC107;">
                             <div class="card-title">
-                                PAYMENT HISTORY &nbsp; 500 PERSONS
+                             RENT/LEASE PAYMENT HISTORY
                             </div>
 
                         </div>
@@ -150,14 +163,14 @@ color: #00192D;
                                         <th scope="row">1/7/11</th>
                                             <td>KSH 10,000</td>
                                             <td>KSH 10,000</td>
-                                            <td> <button class="btn btn-sm btn-outline custom-btn">PRINT RECEIPT</button>   </td>
+                                            <td> <button class="btn btn-sm btn-outline custom-btn">DOWNLOAD RECEIPT</button>   </td>
                                             
                                     </tr>
                                     <tr>
                                     <th scope="row">2/7/11</th>
                                     <td>KSH 20,0000</td>
                                     <td>KSH 0</td>
-                                    <td>  <button class="btn btn-sm btn-outline custom-btn">PRINT RECEIPT</button>  </td>
+                                    <td>  <button class="btn btn-sm btn-outline custom-btn">DOWNLOAD RECEIPT</button>  </td>
                                     
 
                                     </tr>
@@ -165,7 +178,7 @@ color: #00192D;
                                         <th scope="row">3/7/11</th>
                                     <td>KSH 10000</td>
                                     <td>KSH 0</td>
-                                    <td> <button class="btn btn-sm btn-outline custom-btn">PRINT RECEIPT</button> </td>
+                                    <td> <button class="btn btn-sm btn-outline custom-btn">DOWNLOAD RECEIPT</button> </td>
                                     
                                     
 
@@ -182,6 +195,52 @@ color: #00192D;
                         </div>
 
             </div>
+
+            <div class="row mt-3 ">
+                <div class="col-md-12">
+                    <div class="card"> 
+                        <div class="card-header " style="background-color: #00192D; color:#FFC107;">
+                                <div class="card-title">
+                                RENT/LEASE AGREEMENT FILES
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">FIRST PARTY (YOU)</th>
+                                                <th scope="col">SECOND PARTY (TENANT)</th>
+                                                <th scope="col">DEPOSIT</th>
+                                                <th scope="col">ACTION</th>
+                                                
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">EBENEZER</th>
+                                                <td>JOHN DOE</td>
+                                                <td>KSH 100,000</td>
+                                                <td>   <span><button class="btn btn-sm btn-outline custom-btn">VIEW AGREEMENT</button></span> <span><button class="btn btn-sm btn-outline custom-btn">DOWNLOAD</button></span></td>
+                                                
+                                        </tr>
+                                        <tr>
+                                        
+                                    
+                                    </tbody>
+                                </table>
+
+                        </div>
+
+                </div>
+
+
+            </div>
+
+
+
 
 
                         </div>
