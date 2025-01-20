@@ -71,7 +71,7 @@
     cursor: pointer;
     position: relative;
 }
-
+/* 
 .badge {
     position: absolute;
     top: -5px;
@@ -81,7 +81,7 @@
     font-size: 12px;
     padding: 4px 8px;
     border-radius: 50%;
-}
+} */
   </style>
   </head>
 <body>

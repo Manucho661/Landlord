@@ -49,6 +49,12 @@ color: #00192D;
     color:  #FFC107; /* White background */
         }
 
+    .statement{
+        background-color: #FFC107;
+        color: #00192D ;
+
+        }
+
         .profile-card {
       background-color: #f8f9fa;
       border-radius: 10px;
@@ -72,6 +78,29 @@ color: #00192D;
       /* /margin: 5px 0; */
       color: #6c757d;
     }
+    .profile_details{
+        display: flex;
+        
+    }
+    .profile_picture{
+        margin-right: 4%;
+    }
+    .profile_info .one{
+        color: #666;
+        font-size: 14px;
+        display: block;
+        text-align: justify;   
+
+    }
+    .other_profile_details{
+        display: block;
+        color: #666;
+        font-size: 14px;
+        display: block;
+        text-align: justify;
+        
+        
+    }
 
     </style>
 </head>
@@ -88,37 +117,56 @@ color: #00192D;
                 
 
 
-    <div class="container-fluid">
-
-        <div class="row mb-3">
-            <div class="col-3">
-                <div class="page" style="color:gray;">
-                    <b>JOHN DOE</b>     
-                </div>
-            </div>
-            
-
-        </div>
+    <div class="container-fluid" style="box-shadow: 0 2em 8em rgba(0, 0, 0, 0.2);">
 
 
-        <div class="row bg-light">
+        <div class="row bg-light ">
             <!-- Profile Picture -->
 
-            <div class="card" style="background-color:rgba(255, 223, 50, 0.1)
-;"> 
+            <div class="card" style="border:transparent"> 
                         
 
                         <div class="card-body">
                             <div class="row">
-                            <div class="col-md-4">
-                                    <img class="mt-3" src="images/Doe.jpg" alt="Profile Picture"  width="100">
+                                <div class="col-md-6">
+                                    <div class="profile_details">
+                                        <div class="profile_picture">
+                                         <img class="mt-3" src="Doe.jpg" alt="Profile Picture"  width="100">
+                                        </div>
+                                        <div class="profile_info">
+                                    
+                                            <!-- <h2>Jane Doe</h2> -->
+                                             <h3 style=" border-bottom: 1px solid #ddd;" >John Doe</h3>
+                                             <div class="profile_details one">
+                                                <p><strong>Occupation &nbsp;|</strong> Teacher</p>
+                                                <p><strong>DATE OF BIRTH &nbsp;|</strong> 5-23-1995</p>
+                                                <p><strong>IDENTIFICATION NUMBER &nbsp; |</strong> 012020202</p>
+                                            </div>
+                                
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                                 <!-- Profile Details -->
-                                <div class="col-md-8">
-                                <!-- <h2>Jane Doe</h2> -->
-                                    <p><strong>Occupation:</strong> Teacher</p>
-                                    <p><strong>DATE OF BIRTH:</strong> 5-23-1995</p>
-                                    <p><strong>IDENTIFICATION NUMBER:</strong> 012020202</p>
+
+                                <div class="col-md-4" style=" border-left: 1px solid #ddd;">
+                                
+                                            <div class="other_profile_details">
+                                                <p><strong>Origin &nbsp;|</strong> KENYAN</p>
+                                                <p><strong>End Date &nbsp; |</strong> 6-7-2020</p>
+                                                <p><strong>Start Date &nbsp;|</strong> 5-23-1995</p>
+                                                
+                                            </div>
+
+
+                                </div>
+                                <div class="col-md-2" style=" display:flex; flex-direction: column; justify-content:end;">
+                                
+                                            <div>
+                                                <button type="button" class="btn btn-danger">Remove John</button>
+                                            </div>
+
+
                                 </div>
                             </div>
                                 
@@ -141,10 +189,11 @@ color: #00192D;
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header " style="background-color: #00192D; color:#FFC107;">
-                            <div class="card-title">
-                             RENT/LEASE PAYMENT HISTORY
+                            <div class="card-title" style="display: flex;  justify-content: space-between;">
+                                <div>RENT/LEASE PAYMENT HISTORY (Monthly)</div>
+                                <div><button class="btn btn-sm btn-outline custom-btn statement">GET Full STATEMENT</button></div>
+                             
                             </div>
-
                         </div>
 
                         <div class="card-body">
@@ -200,8 +249,11 @@ color: #00192D;
                 <div class="col-md-12">
                     <div class="card"> 
                         <div class="card-header " style="background-color: #00192D; color:#FFC107;">
-                                <div class="card-title">
-                                RENT/LEASE AGREEMENT FILES
+                                <div class="card-title" >
+                                    
+                                    RENT/LEASE AGREEMENT FILES
+                                    
+                                    
                                 </div>
 
                             </div>
